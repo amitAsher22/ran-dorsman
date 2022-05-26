@@ -1,0 +1,68 @@
+.gridImagesThree{
+  display: grid;
+  grid-template-columns: 3fr 1.4fr 1fr;
+  gap: 10px;
+  padding: 30px;
+  height: 700px;
+  width:100%;
+  font-size:20px;
+  font-weight: 100;
+
+}
+
+
+
+.bg1Three{
+  object-fit: cover;
+  
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 700px;
+}
+.bg2Three{
+  object-fit: cover;
+ 
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 700px;
+}
+
+.bg3Three{
+  background-color: aliceblue;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+ 
+
+}
+
+.bg3Div{
+  margin: auto;
+}
+
+.btnSectionTwo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-items: center;
+  gap: 20px;
+  padding: 30px;
+
+}
+
+.btnSctionTwo{
+  border: none;
+  border-radius: 12px;
+  padding: 7px  40px;
+  background-color: rgb(38, 55, 36);
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+  font-weight: 100;
+}
+
+.btnSctionTwo:hover{
+  cursor: pointer;
+}
+

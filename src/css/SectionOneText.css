@@ -1,0 +1,25 @@
+.SectionOneText{
+  text-align: center;
+ font-size: 19px;
+  word-spacing: 5px;
+}
+p{
+  margin: 10px;
+}
+
+.buttonSectionOne{
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 12px;
+  padding: 10px  50px;
+  background-color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  font-weight: 100;
+  
+}
+
+.buttonSectionOne:hover{
+  color: white;
+  background-color: aqua;
+  cursor: pointer;
+}

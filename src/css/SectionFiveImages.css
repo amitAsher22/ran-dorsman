@@ -1,0 +1,63 @@
+.gridImages{
+  display: grid;
+  grid-template-columns: 1fr 1fr 2.1fr;
+  gap: 10px;
+  padding: 30px;
+  height: 500px;
+  width:100%;
+  font-size:20px;
+  font-weight: 100;
+
+}
+
+.bgdivFive{
+  background-color: aliceblue;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+ 
+}
+
+.bg3divFive{
+  margin: auto;
+}
+.btnSectionTwoFive{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-items: center;
+  gap: 20px;
+  padding: 30px;
+}
+
+.btnSctionTwoFive{
+  border: none;
+  border-radius: 12px;
+  padding: 7px  40px;
+  background-color: rgb(38, 55, 36);
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+  font-weight: 100;
+}
+
+.btnSctionTwoFive:hover{
+  cursor: pointer;
+}
+
+.bg1Five{
+  object-fit: cover;
+  
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 500px;
+}
+
+.bg2Five{
+  object-fit: cover;
+ 
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 500px;
+}

@@ -1,13 +1,11 @@
 .gridImages{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 10px;
-  padding: 30px;
-  height: 700px;
+  
   width: 100%;
   font-size: 20px;
   font-weight: 100;
-  margin-bottom: 12%;
+ 
 
 }
 
@@ -33,18 +31,18 @@
   justify-content: center;
 }
 
-/* .bg3{
+ /* .bg3{
   background-color: aliceblue;
   display: flex;
   text-align: center;
   justify-content: center;
  
 
-}
-
-.bg3Div{
-  margin: auto;
 } */
+
+/* .bg3Div{
+  margin: auto;
+} */ 
 
 .btnSectionTwo{
   display: flex;

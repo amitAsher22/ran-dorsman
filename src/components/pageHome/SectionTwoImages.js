@@ -5,7 +5,7 @@ import img2 from '../../images/img2.jpg'
 
 function SectionTwoImages() {
   return (
-    <div >
+    
       <div className='gridImages'>
         <img className='bg1'width={250} height={250} src={img1} alt="img1"/>
         <div className='bgTwo'>
@@ -32,7 +32,7 @@ function SectionTwoImages() {
       </div>
 
     
-    </div>
+    
   )
 }
 

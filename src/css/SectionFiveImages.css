@@ -1,9 +1,8 @@
 .gridImages{
   display: grid;
   grid-template-columns: 1fr 1fr 2.1fr;
-  gap: 10px;
-  padding: 30px;
-  height: 500px;
+ 
+
   width:100%;
   font-size:20px;
   font-weight: 100;

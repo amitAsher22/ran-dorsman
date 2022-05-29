@@ -18,7 +18,7 @@ function SectionThreeImages() {
           <p>מדהימה נעה ונהנת :)</p>
           </div>
           <div>
-          <ul>
+          <ul className='pointUl'>
             <li>הטוב ביותר שלך עם עצמך. מגוון</li>
             <li>שיעורים, מפונקציונאלי דרך יוגה,</li>
             <li>ריקוד, פילאטיס כולל מכשירים</li>

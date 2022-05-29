@@ -10,7 +10,7 @@ function SectionTwoImages() {
         <img className='bg1'width={250} height={250} src={img1} alt="img1"/>
         <div className='bgTwo'>
         <div className='bg3'>
-          <div className='bg3Div'>
+          <div >
           <h2> מגוון רחב של שיעורים וסגנונות</h2>
           <p>אנחנו מזמינים אותך למצוא את</p>
           <p>התנועה שמיטיבה איתך,</p>

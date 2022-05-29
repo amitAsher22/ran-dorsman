@@ -32,13 +32,13 @@
   display: flex;
   text-align: center;
   justify-content: center;
- 
+
 
 } 
 
-/* .bg3Div{
+.bg3Div{
   margin: auto;
-} */
+}
 
 .btnSectionTwo{
   display: flex;
@@ -66,3 +66,7 @@
   cursor: pointer;
 }
 
+
+.pointUl{
+  list-style-type: none;
+}

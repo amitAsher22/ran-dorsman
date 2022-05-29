@@ -1,12 +1,30 @@
-import React from 'react'
+import React , {useState ,useContext} from 'react'
 import '../../css/navbar.css'
 import { FaFacebookF } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
+import logo from '../../images/logo.png'
+import { GiHamburgerMenu } from 'react-icons/gi';
+import HamburgerNavBar from './HamburgerNavBar';
+import {UserContext} from '../../App'
+
 
 function Navbar() {
+  const [showHamburger , setshowHamburger] = useState(true)
+  const {toggle , setToggle}  = useContext(UserContext)
+ 
+  
+ 
+  const showNavBar = ()=>{
+    setshowHamburger(!showHamburger)
+    setToggle('home1')
+    
+ 
+  }
   return (
     <div className='size'>
-        <ul className='banbarPosition'>
+    {showHamburger ? <div>
+      <ul className='banbarPosition'>
+            <img src={logo} alt="logo" className='logoRan'/>
             <li className='page'>עלינו</li>
             <li className='page'>השיעורים</li>
             <li className='page'>מסלולים</li>
@@ -20,6 +38,19 @@ function Navbar() {
               <FaInstagram/>
             </div>
       </ul>
+     
+      <div className='hamburgarIcons'>
+            <div>
+                  <GiHamburgerMenu  onClick={()=> showNavBar()}/>
+                      <FaInstagram/>
+                    <FaFacebookF/>
+            </div>
+            <div>
+                  <img src={logo} alt="logo" className='logoRan'/>
+            </div>
+      </div>
+    </div> : <HamburgerNavBar/>}
+    
     
     </div>
   )

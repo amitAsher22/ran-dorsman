@@ -10,7 +10,7 @@ function SectionFourImages() {
     <div className='gridImagesFour'>
       <img className='bg1Four'width={250} height={150} src={img5} alt="img1"/>
       <div className='bg3Four'>
-      <div className='bg3Div'>
+      <div className='bg3DivFour'>
           <h2> חברות וארגונים</h2>
           <p>חצי יום של תנועה, שחרור</p>
           <p>והנאה לצוותים וארגונים בNUA.</p>

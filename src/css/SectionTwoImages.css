@@ -29,20 +29,21 @@
   display: flex;
   text-align: center;
   justify-content: center;
+
 }
 
- /* .bg3{
+ .bg3{
   background-color: aliceblue;
   display: flex;
   text-align: center;
   justify-content: center;
- 
-
-} */
-
-/* .bg3Div{
   margin: auto;
-} */ 
+  
+
+
+}
+
+
 
 .btnSectionTwo{
   display: flex;

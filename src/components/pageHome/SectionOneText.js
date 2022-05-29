@@ -14,7 +14,10 @@ function SectionOneText() {
          <p className='p'>התנועה מאפשרת לנו להתחבר פנימה, להתחבר לאחרים, ולרגע הזה.</p>
          <p className='p'>התנועה מאפשרת לשנות. להרגיש. לרפא. לשחרר.</p>
          <p className='p'>והיא לכולם.</p>
+         <div>
+
          <button className='buttonSectionOne'>לתיאום שיעור ניסיון</button>
+         </div>
       
      </div>
 

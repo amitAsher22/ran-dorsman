@@ -56,6 +56,30 @@ svg:hover{
   .home{
     display: block;
   }
+ 
+.gridImages{
+  display: flex;
+  flex-direction: column;
+}
+.bg3Three{
+  display: flex;
+  flex-direction: column;
+}
+.gridImagesThree{
+  display: flex;
+  flex-direction: column;
+}
+.gridImagesFour{
+  display: flex;
+  flex-direction: column;
+}
+.bgEmail{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0px;
+ 
+}
 
 
 }

@@ -4,7 +4,7 @@
   justify-content: center;
   margin: auto;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
   width: 100%;
   height: 100%;
   padding: 20px;
@@ -19,4 +19,8 @@
   padding: 20px;
 
 
+}
+
+.listNavbar{
+  list-style-type: none;
 }

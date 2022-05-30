@@ -35,7 +35,7 @@ function Email() {
         <div >
             <div className='bgEmail'>
             {show ?  
-            <form className='rightEmailDiv' ref={form} onSubmit={sendEmail}>
+            <form className='rightEmailDiv' ref={form} onSubmit={sendEmail} id='email'>
              
                   <h1 className='titleEmail'>נעים איתך</h1>
                   <input placeholder='שם' className='inputEmail' type="text" name="fullName" onChange={(event)=> setName(event.target.value)} value={name}/>

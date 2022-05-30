@@ -6,6 +6,7 @@ import logo from '../../images/logo.png'
 import { GiHamburgerMenu } from 'react-icons/gi';
 import HamburgerNavBar from './HamburgerNavBar';
 import {UserContext} from '../../App'
+import {Link} from 'react-scroll'
 
 
 function Navbar() {
@@ -21,8 +22,8 @@ function Navbar() {
  
   }
   return (
-    <div className='size'>
-    {showHamburger ? <div>
+    <div >
+    {showHamburger ? <div >
       <ul className='banbarPosition'>
             <img src={logo} alt="logo" className='logoRan'/>
             <li className='page'>עלינו</li>
@@ -32,7 +33,7 @@ function Navbar() {
             <li className='page'>לארגונים</li>
             <li className='page'>קייטנת תנועה 7-9</li>
             <li className='page'>גלריה</li>
-            <li className='page'>צרו קשר</li>
+           <Link to='email' smooth={true} duration={2000}> <li className='page'>צרו קשר</li></Link>
             <div className='socialMedia'>
              <FaFacebookF/>
               <FaInstagram/>
@@ -40,7 +41,7 @@ function Navbar() {
       </ul>
      
       <div className='hamburgarIcons'>
-            <div>
+            <div >
                   <GiHamburgerMenu  onClick={()=> showNavBar()}/>
                       <FaInstagram/>
                     <FaFacebookF/>
@@ -49,7 +50,7 @@ function Navbar() {
                   <img src={logo} alt="logo" className='logoRan'/>
             </div>
       </div>
-    </div> : <HamburgerNavBar/>}
+    </div> : <HamburgerNavBar setshowHamburger={setshowHamburger} showHamburger={showHamburger}/>}
     
     
     </div>

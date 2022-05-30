@@ -4,6 +4,7 @@ import Navbar from "./components/pageHome/Navbar";
 import './css/app.css'
 import React ,{useState,createContext}  from 'react'
 
+
 export const UserContext = createContext();
 
 function App() {
@@ -11,7 +12,7 @@ function App() {
   return (
       <UserContext.Provider value={{toggle , setToggle}}>
       <div className="app"  >
-            <Navbar  />
+            <Navbar />
             <Routes >
                 <Route path="/" element={<Home />} />
           </Routes>

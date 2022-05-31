@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Navbar from "./components/pageHome/Navbar";
+import GalleryImages from "./components/Gallery/GalleryImages";
 import './css/app.css'
 import React ,{useState,createContext}  from 'react'
 
@@ -15,6 +16,7 @@ function App() {
             <Navbar />
             <Routes >
                 <Route path="/" element={<Home />} />
+                <Route path="/gallery" element={<GalleryImages />} />
           </Routes>
       </div>
       </UserContext.Provider>

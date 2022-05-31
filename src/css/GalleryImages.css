@@ -1,0 +1,18 @@
+
+
+
+
+.carousel .slider-wrapper{
+  width: 80%;
+  height: 80%;
+} 
+
+/* .carousel .slider img{
+  max-width: 100%;
+ 
+} */
+.carousel{
+ display: flex;
+ justify-content: center;
+}
+

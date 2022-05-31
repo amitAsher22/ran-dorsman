@@ -13,7 +13,7 @@ function Video() {
   return (
     <div className='videoPosition'>
       <ReactPlayer
-       width="80%"
+       width="100%"
        height="700px"  
       url="https://www.youtube.com/watch?v=7sDY4m8KNLc"
       controls={play}

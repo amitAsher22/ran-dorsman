@@ -1,4 +1,4 @@
-import React , {useRef , useState}  from 'react'
+import React , {useRef , useState }  from 'react'
 import '../../css/email.css'
 import { AiOutlineInstagram } from 'react-icons/ai';
 import { FaFacebookF } from 'react-icons/fa';
@@ -13,10 +13,8 @@ function Email() {
   const [MSuser , setMSuser] = useState('')
   const [show , setShow] = useState(true)
 
-  
-
-
   const form = useRef();
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -29,13 +27,15 @@ function Email() {
           console.log(error.text);
       });
   };
+
+
  
 
   return (
         <div >
             <div className='bgEmail'>
             {show ?  
-            <form className='rightEmailDiv' ref={form} onSubmit={sendEmail} id="contact">
+            <form className='rightEmailDiv' ref={form} onSubmit={sendEmail} id="ContactUs">
              
                   <h1  className='titleEmail'>נעים איתך</h1>
                   <input placeholder='שם' className='inputEmail' type="text" name="fullName" onChange={(event)=> setName(event.target.value)} value={name}/>

@@ -40,6 +40,10 @@ svg:hover{
 .home1{
   display: none;
 }
+.linkStyle{
+  text-decoration: none;
+  color: black;
+}
 
 /* //////////////////// media query */
 

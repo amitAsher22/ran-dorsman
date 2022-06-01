@@ -35,9 +35,9 @@ function Email() {
         <div >
             <div className='bgEmail'>
             {show ?  
-            <form className='rightEmailDiv' ref={form} onSubmit={sendEmail} id='email'>
+            <form className='rightEmailDiv' ref={form} onSubmit={sendEmail} id="contact">
              
-                  <h1 className='titleEmail'>נעים איתך</h1>
+                  <h1  className='titleEmail'>נעים איתך</h1>
                   <input placeholder='שם' className='inputEmail' type="text" name="fullName" onChange={(event)=> setName(event.target.value)} value={name}/>
                   <input className='inputEmail' placeholder='על מה נדבר?' name="talk" onChange={(event)=> settalkUser(event.target.value)} value={talkUser}/>
                   <input className='inputEmail' placeholder='דוא"ל' name="email" onChange={(event)=> setemailUser(event.target.value)} value={emailUser}/>

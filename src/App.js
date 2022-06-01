@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route , HashRouter } from "react-router-dom";
 import Home from "./pages/Home";
 import Navbar from "./components/pageHome/Navbar";
 import GalleryImages from "./components/Gallery/GalleryImages";
@@ -14,10 +14,15 @@ function App() {
       <UserContext.Provider value={{toggle , setToggle}}>
       <div className="app"  >
             <Navbar />
+           
             <Routes >
+          
                 <Route path="/" element={<Home />} />
                 <Route path="/gallery" element={<GalleryImages />} />
+              
           </Routes>
+            
+        
       </div>
       </UserContext.Provider>
   );

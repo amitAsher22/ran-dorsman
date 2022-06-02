@@ -5,6 +5,8 @@ import GalleryImages from "./components/Gallery/GalleryImages";
 import AboutUs from "./components/aboutUs/AboutUs";
 import './css/app.css'
 import React ,{useState,createContext}  from 'react'
+import FloatingWhatsApp from 'react-floating-whatsapp'
+
 
 
 export const UserContext = createContext();
@@ -24,7 +26,8 @@ function App() {
                 <Route path="/AboutUs" element={<AboutUs />} />
               
           </Routes>
-            
+          <FloatingWhatsApp phoneNumber="+972523157737"  darkMode={true} allowClickAway={true} accountName="מאמן כושר - אליק" statusMessage="בוא נדבר" chatMessage="בוא נדבר" notification={true} styles={{marginRight:"20px"}} />
+  
         
       </div>
       </UserContext.Provider>

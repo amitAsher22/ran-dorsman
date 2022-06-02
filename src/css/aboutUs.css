@@ -1,0 +1,27 @@
+.bgAboutUs{
+  /* background-color: azure; */
+  height: 90rem;
+  width: 85%;
+  margin: auto;
+  padding: 20px;
+
+}
+
+.paragrapAboutUs{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+ line-height: 4rem;
+ font-family: 'Zen Kaku Gothic New', sans-serif;  margin: auto;
+  padding: 70px;
+
+
+}
+
+.WhoUs{
+/* font-family: "normal normal normal 20px/25px wfont_73f936_590cd8ceb9c347a79e23c75cdcb8be44,wf_590cd8ceb9c347a79e23c75cd,orig_ploni_dl_regular_aaa_regular !important"; */
+  font-weight: 300;
+  font-size: 50px;
+  font-family: 'Tai Heritage Pro', serif;}

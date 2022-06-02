@@ -13,9 +13,9 @@ function Video() {
   return (
     <div className='videoPosition'>
       <ReactPlayer
-       width="100%"
-       height="700px"  
-      url="https://www.youtube.com/watch?v=7sDY4m8KNLc"
+       width="50%"
+       height="600px"  
+      url="https://video.wixstatic.com/video/417376_206d9e980e70474380ba58cb7ed78e98/1080p/mp4/file.mp4"
       controls={play}
       playing={play}
       />

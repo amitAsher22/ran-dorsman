@@ -4,9 +4,10 @@
   list-style: none;
   display: flex;
   line-height: 30px;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin: auto;
   padding: 15px;
+  padding: 30px;
  
 }
 
@@ -15,11 +16,15 @@
 }
 
 svg{
-  margin-right: 10px;
-  font-size: 20px;
+  
+  font-size: 30px;
 }
 svg:hover{
   cursor: pointer;
+}
+.svgIcon{
+    margin-right: 10px;
+    font-size: 20px;
 }
 
 .socialMedia{
@@ -55,7 +60,13 @@ svg:hover{
   .hamburgarIcons{
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 30px;
+   
+  }
+  .hamburgarIcons2{
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
   }
   .home{
     display: block;

@@ -2,6 +2,7 @@ import React ,{useContext , useState}  from 'react'
 import '../../css/HamburgerNavBar.css'
 import { FaFacebookF } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
+import { FiYoutube } from 'react-icons/fi';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import {UserContext} from '../../App'
 
@@ -15,10 +16,6 @@ function HamburgerNavBar(props) {
   const changeNavBar = ()=>{
     setshowHamburger(!showHamburger);
     setToggle('home')
-   
-
-    // setShow(!show)
-    //  {show ? setToggle('home1') : setToggle('home')}
   }
 
   return (
@@ -27,14 +24,16 @@ function HamburgerNavBar(props) {
      <GiHamburgerMenu onClick={()=> changeNavBar()}/>
           <ul className='listNavbar'>
           <li >עלינו</li>
-            <li >השיעורים</li>
-            <li >מסלולים</li>
-            <li >ילדים ונוער</li>
-            <li >לארגונים</li>
-            <li >קייטנת תנועה 7-9</li>
+          <li >אימוני קבוצות</li>
+            <li >מנויים</li>
+            <li >סניפים</li>
+            <li >אונליין</li>
+            <li >אימון אישי</li>
+            <li >ארגונים</li>
             <li >גלריה</li>
             <li >צרו קשר</li>
             <div className='socialMedia1'>
+            <FiYoutube/>
              <FaFacebookF/>
               <FaInstagram/>
               </div>

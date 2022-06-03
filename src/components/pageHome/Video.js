@@ -15,7 +15,7 @@ function Video() {
       <ReactPlayer
        width="50%"
        height="600px"  
-      url="https://video.wixstatic.com/video/417376_206d9e980e70474380ba58cb7ed78e98/1080p/mp4/file.mp4"
+      url="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
       controls={play}
       playing={play}
       />

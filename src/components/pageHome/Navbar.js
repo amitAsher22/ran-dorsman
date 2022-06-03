@@ -36,8 +36,11 @@ function Navbar() {
             <li className="page">
             <Link className="linkStyle"  to="/AboutUs">עלינו</Link>
             </li>
-            <li className="page">אימוני קבוצות</li>
-            <li className="page">מנויים</li>
+            <li className="page">
+            <Link className="linkStyle" to="/Groups">אימוני קבוצות</Link>
+            </li> 
+            <li className="page">
+            <Link className="linkStyle" to="/Subscribers">מנויים</Link></li>
             <li className="page">סניפים</li>
             <li className="page">אונליין</li>
             <li className="page">אימון אישי</li>

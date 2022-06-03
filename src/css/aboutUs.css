@@ -13,9 +13,11 @@
   justify-content: center;
   align-items: center;
   text-align: center;
- line-height: 4rem;
- font-family: 'Zen Kaku Gothic New', sans-serif;  margin: auto;
+ line-height: 3rem;
+ /* font-family: " FreeMono"; */
+ /* font-family: 'Zen Kaku Gothic New', sans-serif;  margin: auto; */
   padding: 70px;
+  font-size: 20px;
 
 
 }
@@ -24,4 +26,37 @@
 /* font-family: "normal normal normal 20px/25px wfont_73f936_590cd8ceb9c347a79e23c75cdcb8be44,wf_590cd8ceb9c347a79e23c75cd,orig_ploni_dl_regular_aaa_regular !important"; */
   font-weight: 300;
   font-size: 50px;
-  font-family: 'Tai Heritage Pro', serif;}
+  font-family: " FreeMono"
+  /* font-family: 'Tai Heritage Pro', serif; */
+  /* font-family: "HelveticaNeueW01-45Ligh,HelveticaNeueW02-45Ligh,HelveticaNeueW10-45Ligh,sans-serif" */
+}
+
+
+.titleMan{
+   /* font-family: 'Miriam Libre', sans-serif; */
+   /* font-family: 'Open Sans', sans-serif; */
+   /* font-family: 'Dorian CLM (Italic)'; */
+   font-family: " FreeMono";
+    font-weight: 100;
+    text-align: right;
+}
+
+.divImgAboutUs{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  
+}
+
+.titleMan{
+  text-align: center;
+}
+
+.titleTeam{
+  font-weight: 100;
+  font-size: 3rem;
+  text-align: center;
+  /* font-family: 'Dorian CLM (Italic)'; */
+  font-family: " FreeMono"
+}

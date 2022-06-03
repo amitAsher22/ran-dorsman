@@ -15,3 +15,15 @@
 hr{
   width: 70%;
 }
+
+.BackgroundPlaces{
+  background-color: rgba(228, 227, 227, 0.46);
+  background-image: url('https://cdn.glitch.com/e4c45146-a1cb-43c3-86fe-35bf46516a43%2Fd.jpg?v=1560731955748');
+  background-blend-mode: screen;
+  height: 100vh;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}

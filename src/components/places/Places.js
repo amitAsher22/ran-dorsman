@@ -5,7 +5,7 @@ import '../../css/places.css'
 
 function Places() {
   return (
-    <div>
+    <div className='BackgroundPlaces'>
       <h1 className="titleGroups">סניפים</h1>
     <div className='sectionPlaces'>
       <div className='cardPlaces'>

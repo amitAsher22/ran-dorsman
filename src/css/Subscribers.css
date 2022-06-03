@@ -51,3 +51,14 @@ align-items: center;
   margin: auto;
 }
 
+.backgrounsSub{
+  background-color: rgba(228, 227, 227, 0.46);
+  background-image: url('https://cdn.glitch.com/e4c45146-a1cb-43c3-86fe-35bf46516a43%2Fe.jpg?v=1560731959643');
+  background-blend-mode: overlay;
+  height: 100vh;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}

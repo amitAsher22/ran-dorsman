@@ -17,8 +17,8 @@ const showSlide = (num)=>{
   }
   const styleImg = {
     display: "flex",
-    padding:"4px",
-    width: "18vw",
+    padding:"0.5rem",
+    width: "16vw",
     height: "10vw"
   };
 
@@ -38,7 +38,7 @@ const showSlide = (num)=>{
           display: "flex",    
           flexWrap: "wrap",
           justifyContent: "center",
-          padding: "5vw",
+          // padding: "5vw",
         }}>
         <div className='divImgAboutUs'>
      <img

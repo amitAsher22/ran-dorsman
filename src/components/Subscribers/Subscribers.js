@@ -7,7 +7,7 @@ import '../../css/Subscribers.css'
  
 
   return (
-    <div>
+    <div className='backgrounsSub'>
     <h1 className="titleGroups">מנויים</h1>
     <div className='positionSubscribers'>
       <div className='Route'>

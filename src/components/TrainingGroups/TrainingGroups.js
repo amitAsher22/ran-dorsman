@@ -18,7 +18,7 @@ const TrainingGroups = () => {
   };
 
   return (
-    <div >
+    <div className="backgroundGroup">
       <div>
         <h1 className="titleGroups">אימוני קבוצות</h1>
         <div className="groupBtn">

@@ -6,6 +6,7 @@ import Lightbox from "fslightbox-react";
 
 
 
+
 function AboutUs() {
 const [changeNum , setChangeNum] = useState(null)
 const [show , setShow] = useState(false)
@@ -25,7 +26,7 @@ const showSlide = (num)=>{
     <div className='bgAboutUs'>
    <div className='paragrapAboutUs'>
       <h1 className='WhoUs'>מי אנחנו</h1>
-      <p>שיעור בר הוא שיעור דינאמי ואנרגטי ששואב השראה מבלט, פילאטיס ועבודה אירובית ואפילו מתבצעו 
+      <p className='Ptext'>שיעור בר הוא שיעור דינאמי ואנרגטי ששואב השראה מבלט, פילאטיס ועבודה אירובית ואפילו מתבצעו 
       בחלקו מול בר בלט 
 משלב אלמנטים של כוחף. 
 נשלב עבודה על שרירי ליבה בדופק משתנה עם משקלים נמוכים שיעור בר הוא שיעור דינאמי ואנרגטי ששואב השראה מבלט, פילאטיס ועבודה אירובית ואפילו מתבצעו  וגמישות ועובר בין כל קבוצות השרירים בגובחלק משלב אלמנטים של כוח וגמישות ועובר בין כל קבוצות השרירים בגוף. <p>
@@ -38,7 +39,6 @@ const showSlide = (num)=>{
           flexWrap: "wrap",
           justifyContent: "center",
           padding: "5vw",
-        
         }}>
         <div className='divImgAboutUs'>
      <img

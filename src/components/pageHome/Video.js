@@ -14,7 +14,7 @@ function Video() {
     <div className='videoPosition'>
       <ReactPlayer
        width="50%"
-       height="600px"  
+       height="400px"  
       url="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
       controls={play}
       playing={play}

@@ -40,8 +40,11 @@ function Navbar() {
             <Link className="linkStyle" to="/Groups">אימוני קבוצות</Link>
             </li> 
             <li className="page">
-            <Link className="linkStyle" to="/Subscribers">מנויים</Link></li>
-            <li className="page">סניפים</li>
+            <Link className="linkStyle" to="/Subscribers">מנויים</Link>
+            </li>
+            <li className="page">
+            <Link className="linkStyle" to="/Places">סניפים</Link>
+            </li>
             <li className="page">אונליין</li>
             <li className="page">אימון אישי</li>
             <li className="page">ארגונים</li>

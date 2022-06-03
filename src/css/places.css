@@ -1,0 +1,17 @@
+.sectionPlaces{
+  display: grid;
+  grid-template-columns: 25vw 25vw 25vw;
+  justify-content: center;
+  gap: 30px;
+}
+
+
+.cardPlaces{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+hr{
+  width: 70%;
+}

@@ -1,9 +1,18 @@
 .bgAboutUs{
   /* background-color: azure; */
-  height: 100vh;
-  width: 90vw;
+  /* min-height: 100vh; */
+  /* min-width: 100vh; */
   margin: auto;
   padding: 20px;
+  background-color: rgba(228, 227, 227, 0.46);
+  background-image: url('https://cdn.glitch.com/e4c45146-a1cb-43c3-86fe-35bf46516a43%2Fd.jpg?v=1560731955748');
+  background-blend-mode: screen;
+  height: 100vh;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
  
 
 }
@@ -68,3 +77,93 @@
   font-size: 1.5rem;
 
 }
+
+/* ************************************************** */
+
+.main {
+  display:flex;
+  width: 100%;
+  height: 90vh;
+  direction: ltr;
+  margin:  0 auto;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  /* background-color: yellow; */
+  height: 100px;
+  align-items: center;
+  padding: 0 5px;
+}
+
+.slider-wrapper{
+  display: flex;
+ 
+  width: 100%;
+  height: 100%;
+}
+
+.left {
+  display: flex;
+  width: 70%;
+  /* background-color: red; */
+  justify-content: center;
+  align-items: center;
+}
+
+.left img {
+  max-width: 90%;
+  max-height: 90%;
+  display: flex;
+  margin: 0 50px;
+}
+
+.left button {
+  background-color: transparent;
+  border: none;
+}
+
+.top button {
+  border: none;
+  background: transparent;
+  width: 50px;
+  height: 50px;
+}
+
+
+.right {
+  width: 30%;
+  /* background-color:blue; */
+  
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.right p {
+  /* background-color: green; */
+  padding: 0 50px;
+  /* width: 200px; */
+}
+
+.containerImages{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+
+}
+
+.imgCoach{
+  width: 250px;
+  height: 250px;
+}
+
+
+
+
+

@@ -1,8 +1,8 @@
 .sectionPlaces{
   display: grid;
-  grid-template-columns: 25vw 25vw 25vw;
-  justify-content: center;
-  gap: 30px;
+  grid-template-columns: 18vw 18vw 18vw;
+  justify-content: space-evenly;
+
 }
 
 
@@ -10,8 +10,40 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  background-color: white;
+  padding: 30px;
+  border: 1px solid black;
+}
+.cardPlaces2{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(16, 56, 17);
+  padding: 30px;
+  border: 1px solid black;
+  color: white;
+}
+
+.location{
+  width: 20px;
+  height: 20px;
+  margin-left: 3px;
 
 }
+.location2{
+  width: 20px;
+  height: 20px;
+  margin-left: 3px;
+  
+}
+
+.middle{
+ display: flex;
+ align-items: center;
+padding: 0.3rem;
+
+}
+
 hr{
   width: 70%;
 }

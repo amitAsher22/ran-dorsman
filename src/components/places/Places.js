@@ -9,22 +9,22 @@ function Places() {
       <h1 className="titleGroups">סניפים</h1>
     <div className='sectionPlaces'>
       <div className='cardPlaces'>
-       <h3>תל אביב</h3>
+       <h2>תל אביב</h2>
        <hr/>
-      <div> <GoLocation/> <span>נווה אביבים</span></div>
-      <div><AiOutlineSchedule/> <span>א - ה8:00-22:00  </span> <span>יום ו8:00-15:00</span></div>  
+      <div className='middle'> <GoLocation className='location'/> <span>נווה אביבים</span></div>
+      <div className='middle'><AiOutlineSchedule className='location'/> <span>א - ה 8:00-22:00 </span> <span>יום ו 8:00-15:00  </span></div>  
+      </div>
+      <div className='cardPlaces2'>
+       <h2>הוד השרון</h2>
+       <hr/>
+       <div className='middle'> <GoLocation className='location2'/> <span>מתחם 1200</span></div>
+      <div className='middle'><AiOutlineSchedule className='location2'/> <span>א - ה 8:00-22:00 </span> <span>יום ו 8:00-15:00</span></div> 
       </div>
       <div className='cardPlaces'>
-       <h3>הוד השרון</h3>
+       <h2>הרצליה</h2>
        <hr/>
-       <div> <GoLocation/> <span>מתחם 1200</span></div>
-      <div><AiOutlineSchedule/> <span>א - ה8:00-22:00  </span> <span>יום ו8:00-15:00</span></div> 
-      </div>
-      <div className='cardPlaces'>
-       <h3>הרצליה</h3>
-       <hr/>
-       <div> <GoLocation/> <span>גליל ים החדשה</span></div>
-      <div><AiOutlineSchedule/> <span>א - ה8:00-22:00  </span> <span>יום ו8:00-15:00</span></div> 
+       <div className='middle'> <GoLocation className='location'/> <span>גליל ים החדשה</span></div>
+      <div className='middle'><AiOutlineSchedule className='location'/> <span>א - ה 8:00-22:00 </span> <span>יום ו 8:00-15:00</span></div> 
       </div>
     </div>
     </div>

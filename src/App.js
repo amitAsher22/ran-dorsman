@@ -31,7 +31,7 @@ function App() {
                 <Route path="/Places" element={<Places />} />
               
           </Routes>
-          <FloatingWhatsApp phoneNumber="+972523157737"  darkMode={true} allowClickAway={true} accountName="מאמן כושר - אליק" statusMessage="בוא נדבר" chatMessage="בוא נדבר" notification={true} styles={{marginRight:"20px"}} />
+          <FloatingWhatsApp phoneNumber="+972523157737"  darkMode={true} allowClickAway={true} accountName="מאמן כושר - אליק" statusMessage="בוא נדבר" chatMessage="בוא נדבר" notification={true} styles={{marginRight:"10px"}} />
   
         
       </div>

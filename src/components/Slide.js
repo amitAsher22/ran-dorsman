@@ -1,15 +1,6 @@
-import React , { useState , useEffect } from 'react'
-import '../../css/aboutUs.css'
-// import FsLightbox from 'fslightbox-react';
-// import Lightbox from "fslightbox-react";
-// import Slide from '../Slide';
+import React, { useState ,useEffect } from "react";
 
-
-
-
-
-
-function AboutUs() {
+function Slide() {
 
   const [show, setShow] = useState(false);
   const [oneCoach, setoneCoach] = useState({});
@@ -118,4 +109,4 @@ function AboutUs() {
   );
 }
 
-export default AboutUs
+export default Slide;

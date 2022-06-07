@@ -30,6 +30,46 @@ function AboutUs() {
       text: "  התשוקה שלי היא תנועה וריקו בנוסף יש לי קליניקה לפדיקורפלקסולוגיה - טיפול פדיקור ",
       id: 2,
     },
+    {
+      imageCoach:
+        "https://cdn.glitch.com/e4c45146-a1cb-43c3-86fe-35bf46516a43%2Fe.jpg?v=1560731959643",
+
+      name: "דביר",
+      text: "  התשוקה שלי היא תנועה וריקו בנוסף יש לי קליניקה לפדיקורפלקסולוגיה - טיפול פדיקור ",
+      id: 3,
+    },
+    {
+      imageCoach:
+        "https://cdn.glitch.com/e4c45146-a1cb-43c3-86fe-35bf46516a43%2Fe.jpg?v=1560731959643",
+
+      name: "נועה",
+      text: "  התשוקה שלי היא תנועה וריקו בנוסף יש לי קליניקה לפדיקורפלקסולוגיה - טיפול פדיקור ",
+      id: 4,
+    },
+    {
+      imageCoach:
+        "https://cdn.glitch.com/e4c45146-a1cb-43c3-86fe-35bf46516a43%2Fe.jpg?v=1560731959643",
+
+      name: "דביר",
+      text: "  התשוקה שלי היא תנועה וריקו בנוסף יש לי קליניקה לפדיקורפלקסולוגיה - טיפול פדיקור ",
+      id: 5,
+    },
+    {
+      imageCoach:
+        "https://cdn.glitch.com/e4c45146-a1cb-43c3-86fe-35bf46516a43%2Fe.jpg?v=1560731959643",
+
+      name: "עדי",
+      text: "  התשוקה שלי היא תנועה וריקו בנוסף יש לי קליניקה לפדיקורפלקסולוגיה - טיפול פדיקור ",
+      id: 6,
+    },
+    {
+      imageCoach:
+        "https://cdn.glitch.com/e4c45146-a1cb-43c3-86fe-35bf46516a43%2Fe.jpg?v=1560731959643",
+
+      name: "שחר",
+      text: "  התשוקה שלי היא תנועה וריקו בנוסף יש לי קליניקה לפדיקורפלקסולוגיה - טיפול פדיקור ",
+      id: 7,
+    },
   ]);
 
  
@@ -49,6 +89,7 @@ function AboutUs() {
   
 
   return (
+    <div>
     <div className={toggle}>
   
       {show ? (
@@ -85,6 +126,7 @@ function AboutUs() {
           </div>
         </main>
       ) : (
+        <div className="positionAboutUs">
         <div className="bgAboutUs" >
           <div className="paragrapAboutUs">
             <h1 className="WhoUs">מי אנחנו</h1>
@@ -99,8 +141,9 @@ function AboutUs() {
             </p>
             <h1 className="titleTeam">הצוות </h1>
           </div>
+          <div className="divText">
           {coaches.map((coach, index) => (
-            <div onClick={() => specificCoache(coach.id)} key={index}>
+            <div  onClick={() => specificCoache(coach.id)} key={index}>
               <img
                 className="imgCoach"
                 src={coach.imageCoach}
@@ -109,8 +152,12 @@ function AboutUs() {
               <p className="nameOfCoach">{coach.name}</p>
             </div>
           ))}
+          </div>
         </div>
+        </div>
+       
       )}
+    </div>
     </div>
   );
 }

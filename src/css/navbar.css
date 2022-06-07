@@ -1,10 +1,10 @@
 
 .banbarPosition{
-  width: 90%;
+  width: 65rem;
   list-style: none;
   display: flex;
   line-height: 30px;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin: auto;
  font-size: 1.2rem;
   padding: 30px;
@@ -13,6 +13,7 @@
 
 .page:hover{
   cursor: pointer;
+ 
 }
 
 svg{

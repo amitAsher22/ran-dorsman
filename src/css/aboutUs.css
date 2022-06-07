@@ -7,16 +7,15 @@
   background-color: rgba(228, 227, 227, 0.46);
   background-image: url('https://cdn.glitch.com/e4c45146-a1cb-43c3-86fe-35bf46516a43%2Fd.jpg?v=1560731955748');
   background-blend-mode: screen;
-  /* height: 100vh; */
+  height: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-position: center;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
+  
+  /* gap: 20px; */
+  /* flex-wrap: wrap; */
  
 
 }
@@ -29,6 +28,7 @@
   text-align: center;
   font-size: 20px;
   padding: 20px;
+  
 
 
 }
@@ -77,6 +77,18 @@
   font-weight: 200;
   font-size: 1.5rem;
 
+}
+
+
+.divText{
+
+  display: grid;
+  grid-template-columns: 250px 250px 250px 250px;
+  grid-template-rows: 350px 350px 350px 350px;
+  justify-content: center;
+  row-gap: 4%;
+  column-gap: 2%;
+  height: 100vw;
 }
 
 /* ************************************************** */
@@ -142,21 +154,23 @@
 
 
 .right {
-  width: 30%;
+  width: 33%;
   /* background-color:blue; */
   
   display: flex;
   flex-direction: column;
-  text-align: center;
+  text-align: right;
+  justify-content: center
 }
 
-.right p {
+.right  {
   /* background-color: green; */
   padding: 0 50px;
   /* width: 200px; */
 }
 
 .containerImages{
+  
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -165,6 +179,7 @@
 }
 
 .imgCoach{
+  margin: auto;
   width: 250px;
   height: 250px;
 }
@@ -203,8 +218,29 @@
 
 @media (orientation :portrait ){
   .imgCoach{
+    padding: 0px 3%;
     width:95vw;
-    /* height:30% */
+    margin-top: 3.5rem;
+
+  }
+
+  .bgAboutUs{
+    height: 100vw;
+    width: 100vw;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .divText{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%
+  }
+  .bgAboutUs{
+    height: 100%;
   }
   
 }

@@ -2,17 +2,21 @@
   /* background-color: azure; */
   /* min-height: 100vh; */
   /* min-width: 100vh; */
-  margin: auto;
-  padding: 20px;
+  /* margin: auto; */
+  /* padding: 20px; */
   background-color: rgba(228, 227, 227, 0.46);
   background-image: url('https://cdn.glitch.com/e4c45146-a1cb-43c3-86fe-35bf46516a43%2Fd.jpg?v=1560731955748');
   background-blend-mode: screen;
-  height: 100vh;
+  /* height: 100vh; */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-position: center;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
  
 
 }
@@ -23,11 +27,8 @@
   justify-content: center;
   align-items: center;
   text-align: center;
- /* line-height: 3rem; */
- /* font-family: " FreeMono"; */
- /* font-family: 'Zen Kaku Gothic New', sans-serif;  margin: auto; */
-  /* padding: 70px; */
   font-size: 20px;
+  padding: 20px;
 
 
 }
@@ -88,6 +89,9 @@
   margin:  0 auto;
   flex-direction: column;
   align-items: center;
+
+ 
+ 
 }
 
 .top {
@@ -97,7 +101,9 @@
   /* background-color: yellow; */
   height: 100px;
   align-items: center;
-  padding: 0 5px;
+  padding: 0 20px;
+  
+  
 }
 
 .slider-wrapper{
@@ -166,4 +172,39 @@
 
 
 
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
 
+.material-icons:hover{
+  cursor: pointer;
+}
+
+.fill-window {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.nameOfCoach{
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+
+
+/* /////////////////////////////////////////////// media query */
+
+@media (orientation :portrait ){
+  .imgCoach{
+    width:95vw;
+    /* height:30% */
+  }
+  
+}

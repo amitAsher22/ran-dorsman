@@ -1,12 +1,15 @@
-import React  from 'react'
+import React , {useContext}  from 'react'
 import '../../css/Subscribers.css'
+import {UserContext} from '../../App'
 
 
 
  const Subscribers = () => {
- 
+  const {toggle , setToggle}  = useContext(UserContext)
 
   return (
+    <div className={toggle}>
+
     <div className='backgrounsSub'>
     <h1 className="titleGroups">מנויים</h1>
     <div className='positionSubscribers'>
@@ -74,6 +77,7 @@ import '../../css/Subscribers.css'
 
 
 
+    </div>
     </div>
   )
 }

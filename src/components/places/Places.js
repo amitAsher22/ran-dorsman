@@ -1,10 +1,13 @@
-import React from 'react'
+import React , {useContext} from 'react'
 import { AiOutlineSchedule } from 'react-icons/ai';
 import { GoLocation } from 'react-icons/go';
 import '../../css/places.css'
+import {UserContext} from '../../App'
 
 function Places() {
+  const {toggle , setToggle}  = useContext(UserContext)
   return (
+    <div className={toggle}>
     <div className='BackgroundPlaces'>
       <h1 className="titleGroups">סניפים</h1>
     <div className='sectionPlaces'>
@@ -27,6 +30,8 @@ function Places() {
       <div className='middle'><AiOutlineSchedule className='location'/> <span>א - ה 8:00-22:00 </span> <span>יום ו 8:00-15:00</span></div> 
       </div>
     </div>
+    </div>
+
     </div>
   )
 }

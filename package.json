@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.2.0-beta1",
     "fslightbox-react": "^1.6.2-2",
+    "material-icons": "^1.11.1",
     "react": "^18.1.0",
     "react-avatar": "^5.0.1",
     "react-dom": "^18.1.0",

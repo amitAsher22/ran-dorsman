@@ -48,7 +48,7 @@ function Navbar() {
             <li className="page">אונליין</li>
             <li className="page">אימון אישי</li>
             <li className="page">ארגונים</li>
-            <li className="page">בלוג</li>
+            <li className="page"><Link className="linkStyle" to="/Blog">בלוג</Link></li>
             <li>
            <HashLink className="linkStyle" smooth to="/#ContactUs">
                  צור קשר

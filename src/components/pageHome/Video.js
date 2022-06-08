@@ -13,11 +13,14 @@ function Video() {
   return (
     <div className='videoPosition'>
       <ReactPlayer
-       width="50%"
-       height="400px"  
-      url="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+       width="100%"
+       height="500px"  
+      url="https://www.youtube.com/watch?v=-X4ikwUwxoE"
       controls={play}
       playing={play}
+      playsinline={true}
+      autoplay
+      
       />
        
     </div>

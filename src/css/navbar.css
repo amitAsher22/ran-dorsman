@@ -1,13 +1,13 @@
 
 .banbarPosition{
-  width: 65rem;
+  width: 70rem;
   list-style: none;
   display: flex;
-  line-height: 30px;
+  
   justify-content: space-between;
   margin: auto;
- font-size: 1.2rem;
-  padding: 30px;
+ font-size: 1.1rem;
+  padding: 1rem 2px;
  
 }
 

@@ -6,9 +6,11 @@ import AboutUs from "./components/aboutUs/AboutUs";
 import  TrainingGroups  from "./components/TrainingGroups/TrainingGroups";
 import  Subscribers  from "./components/Subscribers/Subscribers";
 import Places from "./components/places/Places";
+
 import './css/app.css'
 import React ,{useState,createContext}  from 'react'
 import FloatingWhatsApp from 'react-floating-whatsapp'
+import Blog from "./components/blog/Blog";
 
 
 
@@ -29,6 +31,7 @@ function App() {
                 <Route path="/Groups" element={<TrainingGroups />} />
                 <Route path="/Subscribers" element={<Subscribers />} />
                 <Route path="/Places" element={<Places />} />
+                <Route path="/Blog" element={<Blog />} />
               
           </Routes>
           <FloatingWhatsApp phoneNumber="+972523157737"  darkMode={true} allowClickAway={true} accountName="מאמן כושר - אליק" statusMessage="בוא נדבר" chatMessage="בוא נדבר" notification={true} styles={{marginRight:"10px"}} />

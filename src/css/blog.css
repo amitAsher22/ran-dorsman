@@ -1,0 +1,65 @@
+.mainDivBlog{
+  display: flex;
+  justify-content: right;
+  
+}
+.fitBlog{
+  font-size: 1rem;
+  text-align: center;
+}
+
+.titleBlog{
+  text-align: center;
+}
+
+.right{
+  width: 30%;
+  justify-content: right;
+ 
+}
+
+.left1{
+  width: 70%;
+  display: grid;
+  grid-template-columns: 300fr 300fr;
+  padding: 20px;
+}
+
+.linebLOG{
+  width: 100%;
+  
+}
+
+.divButtonBlog{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 10px;
+  gap: 20px;
+  text-align: right;
+  justify-content: right;
+ 
+}
+.btnBlog{
+  border: none;
+  padding: 1rem 1.3rem ;
+  font-size: 0.8rem;
+  background-color: aquamarine;
+
+}
+
+.blogShow{
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+ 
+  text-align: right;
+  
+}
+
+.imgBlog1{
+  max-width: 90%;
+  max-height: 90%;
+  display: flex;
+ 
+
+}

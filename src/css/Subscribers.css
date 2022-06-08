@@ -7,15 +7,15 @@ font-weight: 100;
 }
 
 .Route{
-  width: 200px;
-  height: 150px;
+  width: 250px;
+  height: 200px;
   border: 1px solid black;
   padding: 30px;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgb(252, 252, 252);
 }
 .RouteImg{
-  width: 210px;
-  height: 210px;
+  width: 200px;
+  height: 200px;
   border: 1px solid black;
  
 }
@@ -52,13 +52,92 @@ align-items: center;
 }
 
 .backgrounsSub{
-  background-color: rgba(228, 227, 227, 0.46);
+  background-color: rgba(228, 227, 227, 0.896);
   background-image: url('https://cdn.glitch.com/e4c45146-a1cb-43c3-86fe-35bf46516a43%2Fe.jpg?v=1560731959643');
   background-blend-mode: overlay;
-  height: 100vh;
+  height: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-position: center;
+}
+
+.testpos{
+  height: 100vw;
+}
+
+.strong1{
+  font-size: 1.5rem;
+}
+
+.pSub{
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.Route2{
+  width: 20rem;
+  height: 20rem;
+  border: 1px solid black;
+  /* padding: 30px; */
+  /* background-color: rgb(252, 252, 252); */
+}
+
+.Route3{
+  width: 20rem;
+  height: 20rem;
+  border: 1px solid black;
+  padding: 30px;
+  background-color: rgb(252, 252, 252);
+    text-align: center;
+}
+
+
+.fileBtn1{
+  padding: 10px 30px;
+  background-color: #0C4426;
+  font-size: 1rem;
+  border: 0.5px solid rgb(143, 143, 143);
+  color: white;
+}
+
+.btnSubscribers{
+ display: flex;
+ justify-content: center;
+padding: 20px;
+}
+
+
+
+/* ////////////////////////////////////media query */
+
+@media (orientation :portrait ){
+  .positionSubscribers{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+   
+  }
+
+  .Route{
+    width: 90%;
+    text-align: center;
+
+  }
+  .Route2{
+    width: 90%;
+    text-align: center;
+  }
+  .Route3{
+    width: 90%;
+    text-align: center;
+  }
+  .RouteImg{
+    width:90%;
+  }
+
+  .testpos{
+    height: 100%;
+  }
 }

@@ -182,7 +182,10 @@
   margin: auto;
   width: 250px;
   height: 250px;
+
 }
+
+
 
 
 
@@ -237,10 +240,12 @@
   .divText{
     display: flex;
     flex-wrap: wrap;
-    height: 100%
+    height: 100%;
+
   }
   .bgAboutUs{
     height: 100%;
   }
   
 }
+

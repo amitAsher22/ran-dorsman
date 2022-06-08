@@ -12,7 +12,7 @@
   text-align: center;
 }
 
-.right{
+.right22{
   width: 30%;
   justify-content: right;
  
@@ -72,4 +72,30 @@
 
 .readmore{
 font-weight: bold;
+}
+
+@media (orientation :portrait ){
+  .mainDivBlog{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .right22{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .left1{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 2rem;
+    width: 90%;
+  }
+  .divButtonBlog{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }

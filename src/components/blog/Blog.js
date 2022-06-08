@@ -75,7 +75,7 @@ function Blog() {
     <div className={toggle}>
       <h1 className="titleBlog">בלוג</h1>
       <div className="mainDivBlog">
-        <section className="right">
+        <section className="right22">
           <h2 className="fitBlog">THE FIT BLOG TOPICS</h2>
           <hr className="linebLOG" />
           <div className="divButtonBlog">

@@ -2,8 +2,27 @@
  display: flex;
  justify-content: center;
 margin: auto;
+/* object-fit: cover; */
+width: 100%;
+height: 100%;
+  background-size: cover;
+background-position: center center;
+object-fit: cover;
+
 
 }
+
+ .fullscreen {
+  object-fit: cover; 
+  width:100%;
+  height:100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  
+}
+
 
 @media (orientation :portrait ){
   .videoPosition > div{

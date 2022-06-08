@@ -3,6 +3,8 @@ import ReactPlayer from 'react-player'
 import '../../css/video.css'
 
 
+
+
 function Video() {
   const [play , setPlay] = useState(null)
 
@@ -11,19 +13,22 @@ function Video() {
   },[play])
 
   return (
-    <div className='videoPosition'>
-      <ReactPlayer
-       width="100%"
-       height="500px"  
+
+
+ <div className='videoPosition'>
+       <ReactPlayer
+      //  width="100%"
+      //  height="500px"  
       url="https://www.youtube.com/watch?v=-X4ikwUwxoE"
       controls={play}
       playing={play}
       playsinline={true}
       autoplay
+      className="video"
       
-      />
+      /> 
        
-    </div>
+    </div> 
   )
 }
 

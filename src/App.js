@@ -34,7 +34,8 @@ function App() {
                 <Route path="/Blog" element={<Blog />} />
               
           </Routes>
-          <FloatingWhatsApp phoneNumber="+972523157737"  darkMode={true} allowClickAway={true} accountName="מאמן כושר - אליק" statusMessage="בוא נדבר" chatMessage="בוא נדבר" notification={true} styles={{marginRight:"10px"}} />
+       
+          <FloatingWhatsApp phoneNumber="+972523157737"  darkMode={true} allowClickAway={true}  notification={true} styles={{marginRight:"10px"}} />
   
         
       </div>

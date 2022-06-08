@@ -12,12 +12,21 @@ function Email() {
   const [phoneUser, setphoneUser] = useState("");
   const [MSuser, setMSuser] = useState("");
   const [show, setShow] = useState(true);
+  const [isLoading , setLoading] = useState(false)
 
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
-
+    setLoading(true)
+    setTimeout(()=>{
+      setLoading(false)
+      settalkUser('')
+      setemailUser('')
+      setphoneUser('')
+      setMSuser('')
+      setName('')
+    } ,3500)
     emailjs
       .sendForm(
         "service_x5t1q7g",
@@ -28,7 +37,6 @@ function Email() {
       .then(
         (result) => {
           console.log(result.text);
-          console.log("message send");
           setShow(false);
         },
         (error) => {
@@ -40,7 +48,56 @@ function Email() {
   return (
     <div>
       <div className="bgEmail">
-        {show ? (
+      {isLoading ?  '' : 
+      <form
+            className="rightEmailDiv"
+            ref={form}
+            onSubmit={sendEmail}
+            id="ContactUs"
+          >
+            <h1 className="titleEmail">בוא/י נמשיך לדבר</h1>
+            <input
+              placeholder="שם"
+              className="inputEmail"
+              type="text"
+              name="fullName"
+              onChange={(event) => setName(event.target.value)}
+              value={name}
+            />
+            <input
+              className="inputEmail"
+              placeholder="על מה נדבר?"
+              name="talk"
+              onChange={(event) => settalkUser(event.target.value)}
+              value={talkUser}
+            />
+            <input
+              className="inputEmail"
+              placeholder='דוא"ל'
+              name="email"
+              onChange={(event) => setemailUser(event.target.value)}
+              value={emailUser}
+            />
+            <input
+              className="inputEmail"
+              placeholder="טלפון"
+              name="phone"
+              onChange={(event) => setphoneUser(event.target.value)}
+              value={phoneUser}
+            />
+            <textarea
+              className="inputEmail"
+              placeholder="אני רוצה להוסיף עוד כמה מילים:"
+              name="messageUser"
+              onChange={(event) => setMSuser(event.target.value)}
+              value={MSuser}
+            />
+
+            <input type="submit" value="שליחה" className="btnEmail" />
+          </form>
+      }
+      {isLoading ? <h1 className="aftersend">ההודעה נשלחה</h1> :  ''}
+        {/* {show ? (
           <form
             className="rightEmailDiv"
             ref={form}
@@ -89,7 +146,7 @@ function Email() {
           </form>
         ) : (
           <h1>ההודעה נשלחה !</h1>
-        )}
+        )} */}
 
         <div className="leftEmailDiv">
           <div className="instaFacePosition">

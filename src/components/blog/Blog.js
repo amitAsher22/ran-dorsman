@@ -1,10 +1,10 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext ,useEffect  } from "react";
 import { UserContext } from "../../App";
 import "../../css/blog.css";
 
 function Blog() {
   const { toggle, setToggle } = useContext(UserContext);
-  const [categoryBlog , setcategoryBlog] = useState('השראה')
+  const [categoryBlog , setcategoryBlog] = useState("")
   const [blogs, setBlogs] = useState([
     {
       imgBlog:
@@ -71,6 +71,11 @@ function Blog() {
       id:7
     },
   ]);
+
+  useEffect(()=>{
+    setcategoryBlog('אימונים')
+  },[])
+
   return (
     <div className={toggle}>
       <h1 className="titleBlog">בלוג</h1>
@@ -88,9 +93,10 @@ function Blog() {
           <hr className="linebLOG" />
         </section>
 
+           {/* {categoryBlog === "" ? setcategoryBlog(blog) : blog.Categories === categoryBlog} */}
         <section className="left1">
           {blogs.filter((blog) => (
-            blog.Categories === categoryBlog
+           blog.Categories === categoryBlog
           )).map((val , key)=> (
             <div key={key} className="blogShow">
               <img className="imgBlog1" src={val.imgBlog} alt={key} />

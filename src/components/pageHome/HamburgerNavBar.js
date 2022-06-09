@@ -4,6 +4,7 @@ import { FaFacebookF } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
 import { FiYoutube } from 'react-icons/fi';
 import { GiHamburgerMenu } from 'react-icons/gi';
+import { AiOutlineClose } from 'react-icons/ai';
 import {UserContext} from '../../App'
 
 
@@ -21,7 +22,8 @@ function HamburgerNavBar(props) {
   return (
     <div >
       <div className='navbarPosition1'>
-     <GiHamburgerMenu onClick={()=> changeNavBar()}/>
+       <AiOutlineClose onClick={()=> changeNavBar()}/>
+      
           <ul className='listNavbar'>
           <li >עלינו</li>
           <li >אימוני קבוצות</li>

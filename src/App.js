@@ -18,9 +18,10 @@ export const UserContext = createContext();
 
 function App() {
   const [toggle, setToggle] = useState('home')
+
   return (
       <UserContext.Provider value={{toggle , setToggle}}>
-      <div className="app"  >
+      <div className="app" >
             <Navbar />
            
             <Routes >
@@ -32,6 +33,7 @@ function App() {
                 <Route path="/Subscribers" element={<Subscribers />} />
                 <Route path="/Places" element={<Places />} />
                 <Route path="/Blog" element={<Blog />} />
+               
               
           </Routes>
        

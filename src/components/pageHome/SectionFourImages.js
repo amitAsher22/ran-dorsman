@@ -12,12 +12,12 @@ function SectionFourImages() {
       <div className='bg3Four'>
       <div className='bg3DivFour'>
           <h2> חברות וארגונים</h2>
-          <p>חצי יום של תנועה, שחרור</p>
-          <p>והנאה לצוותים וארגונים בNUA.</p>
-          <p>חווית ריטריט באמצע היום -</p>
-          <p>ניתוק לטובת חיבור מחדש, של</p>
-          <p>כל אחד לעצמו, לאחרים ולרגע</p>
-          <p>כאן ועכשיו.</p>
+          <p className='p'>חצי יום של תנועה, שחרור</p>
+          <p className='p'>והנאה לצוותים וארגונים בNUA.</p>
+          <p className='p'>חווית ריטריט באמצע היום -</p>
+          <p className='p'>ניתוק לטובת חיבור מחדש, של</p>
+          <p className='p'>כל אחד לעצמו, לאחרים ולרגע</p>
+          <p className='p'>כאן ועכשיו.</p>
   
           <div className='btnSectionTwo'>
             <button className='btnSctionTwo'> מידע נוסף</button>

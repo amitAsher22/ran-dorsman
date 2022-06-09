@@ -25,6 +25,10 @@
 
 .buttonSectionOne:hover{
   color: white;
-  background-color: aqua;
+  background-color: rgb(31, 65, 65);
   cursor: pointer;
+}
+
+.p{
+  margin: 0px;
 }

@@ -1,7 +1,8 @@
 .app{
   /* width: 80%; */
   margin: auto;
-  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
+  /* font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif; */
+  font-family: HelveticaNeueW01-45Ligh,HelveticaNeueW02-45Ligh,HelveticaNeueW10-45Ligh,Helvetica Neue,Helvetica,Arial,\\30e1\30a4\30ea\30aa,meiryo,\\30d2\30e9\30ae\30ce\89d2\30b4 pro w3,hiragino kaku gothic pro;
   /* font-family:'Inter'; */
   margin: 0;
   padding: 0;

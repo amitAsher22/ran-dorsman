@@ -13,9 +13,9 @@ function SectionThreeImages() {
           <div className='bg3Div'>
           <h2>מגוון מסלולים </h2>
           <div>
-          <p>מגוון מסלולים שיאפשר לכם/ן</p>
-          <p>להצטרף אלינו, לקהילה</p>
-          <p>מדהימה נעה ונהנת :)</p>
+          <p className='p'>מגוון מסלולים שיאפשר לכם/ן</p>
+          <p className='p'>להצטרף אלינו, לקהילה</p>
+          <p className='p'>מדהימה נעה ונהנת :)</p>
           </div>
           <div>
           <ul className='pointUl'>

@@ -14,9 +14,9 @@ function SectionFiveImages() {
           <h2> ילדים ונוער ב NUA</h2>
           <div>
             <ul>
-              <li> 2-5 קונטקידס (תנועה לוהורים וילדים) גילאי </li>
-              <li>היפהופ מט"ח ועד ה' (חלוקה גילאית) </li>
-              <li>סדנאות ליווי התפתחותי</li>
+              <li className='pointFive'> 2-5 קונטקידס (תנועה לוהורים וילדים) גילאי </li>
+              <li className='pointFive'>היפהופ מט"ח ועד ה' (חלוקה גילאית) </li>
+              <li className='pointFive'>סדנאות ליווי התפתחותי</li>
             </ul>
           </div>
         

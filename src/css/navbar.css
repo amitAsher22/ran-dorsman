@@ -6,8 +6,8 @@
   
   justify-content: space-between;
   margin: auto;
- font-size: 1.1rem;
-  padding: 1rem 2px;
+ font-size: 1rem;
+  padding: 1.5rem 2px;
  
 }
 
@@ -50,6 +50,10 @@ svg:hover{
 .linkStyle{
   text-decoration: none;
   color: black;
+ 
+}
+.linkStyle:hover{
+  color : black
 }
 
 /* //////////////////// media query */

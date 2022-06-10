@@ -6,11 +6,14 @@ import AboutUs from "./components/aboutUs/AboutUs";
 import  TrainingGroups  from "./components/TrainingGroups/TrainingGroups";
 import  Subscribers  from "./components/Subscribers/Subscribers";
 import Places from "./components/places/Places";
+import Online from "./components/online/Online";
 
 import './css/app.css'
 import React ,{useState,createContext}  from 'react'
 import FloatingWhatsApp from 'react-floating-whatsapp'
 import Blog from "./components/blog/Blog";
+import Person from "./components/PersonTrain/Person";
+
 
 
 
@@ -33,6 +36,8 @@ function App() {
                 <Route path="/Subscribers" element={<Subscribers />} />
                 <Route path="/Places" element={<Places />} />
                 <Route path="/Blog" element={<Blog />} />
+                <Route path="/Online" element={<Online />} />
+                <Route path="/personal" element={<Person />} />
                
               
           </Routes>

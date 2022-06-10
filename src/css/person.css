@@ -1,0 +1,141 @@
+.sectionOne{
+  display: flex;
+  justify-content: space-around;
+  padding: 5rem;
+  background-color: rgba(77, 77, 77, 0.509);
+  background-image: url('https://cdn.glitch.com/e4c45146-a1cb-43c3-86fe-35bf46516a43%2Fd.jpg?v=1560731955748');
+  background-blend-mode: darken;
+  height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  
+}
+.leftPerson{
+  border: 0.2rem solid rgb(240, 240, 240);
+  width: 300px;
+  height: 250px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+ 
+
+
+  
+}
+
+.divTime{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  
+  font-size: 2.5rem;
+
+}
+
+.timeP{
+  margin: 0;
+  color: white;
+}
+
+.colorPersonT{
+  font-size: 5rem;
+  color: white;
+}
+
+.CTrain{
+  color: rgb(58, 194, 62);
+}
+
+.iconP{
+  font-size: 1rem;
+  margin-left: 0.5rem;
+  color: rgb(58, 194, 62);
+}
+
+.listP{
+  margin: 0px;
+  color: white;
+}
+
+/* ///////////////////////////////////////////////////sectiontwo */
+
+.sectionTwo{
+  display: grid;
+  grid-template-columns:250px 250px 800px;
+  width: 80%;
+ justify-content: space-evenly;
+ margin: auto;
+ padding: 3rem;
+ gap: 2rem;
+}
+
+.div2{
+  width: 15rem;
+  height: 60%;
+  padding: 1rem;
+  border: 1px solid gainsboro;
+  background-color: #f7f7f7;
+  text-align: center;
+ 
+}
+
+.div3{
+  width: 15rem;
+  height: 50%;
+  border: 1px solid gainsboro;
+  background-color: #f7f7f7;
+  text-align: center;
+ 
+ 
+}
+
+.imgPerson{
+  width: 100%;
+   
+}
+
+.tDiv1{
+  font-size: 2rem;
+}
+
+.colortextDiv1{
+  color: grey;
+}
+
+.colorUl{
+  color: rgb(58, 194, 62);;
+}
+.btnDiv2{
+  width: 100%;
+  border: none;
+  padding: 0.5rem;
+  background-color: rgb(58, 194, 62);
+  color: white;
+}
+
+.divBtnDiv1{
+  width: 100%;
+}
+
+.point1{
+  list-style-type: none;
+  
+}
+
+.nameDiv3{
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+.listFont{
+  font-size: 1.5rem;
+  color: grey;
+}
+
+.clock1{
+  color: rgb(58, 194, 62);
+}

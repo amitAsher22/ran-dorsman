@@ -116,6 +116,13 @@ function Person() {
          <p className="nameDiv3"> <strong  >רן דורסמן</strong></p>
          <p>מאמן כושר אישי</p>
         </div>
+        <div className="div3">
+          <h2>מאמן כושר</h2>
+         <div><img className="imgPerson" src="https://fitness-tv.co.il/wp-content/uploads/2021/01/about5.jpg" alt="ran"/></div> 
+         <p className="nameDiv3"> <strong  >אליק</strong></p>
+         <p>מאמן כושר אישי</p>
+        </div>
+        
       </div>
     </div>
   );

@@ -1,6 +1,10 @@
 import React, { useState, useEffect ,useContext } from "react";
 import {UserContext} from '../../App'
 import "../../css/aboutUs.css";
+import data from './aboutUs.json'
+
+
+
 function AboutUs() {
   const {toggle , setToggle}  = useContext(UserContext)
   const [show, setShow] = useState(false);

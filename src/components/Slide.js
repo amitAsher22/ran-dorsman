@@ -1,4 +1,7 @@
 import React, { useState ,useEffect } from "react";
+import data from './slide.json'
+
+
 
 function Slide() {
 

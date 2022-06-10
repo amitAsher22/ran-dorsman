@@ -6,6 +6,7 @@ import { FiYoutube } from 'react-icons/fi';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { AiOutlineClose } from 'react-icons/ai';
 import {UserContext} from '../../App'
+import data from './HamburgerNavBar.json'
 
 
 

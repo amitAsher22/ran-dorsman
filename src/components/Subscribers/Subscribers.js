@@ -1,6 +1,9 @@
 import React, { useContext } from "react";
 import "../../css/Subscribers.css";
 import { UserContext } from "../../App";
+import data from './subscribers.json'
+
+
 
 const Subscribers = () => {
   const { toggle, setToggle } = useContext(UserContext);

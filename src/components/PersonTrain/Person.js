@@ -6,6 +6,9 @@ import { MdOutlinePeople } from "react-icons/md";
 import { BsMenuButtonFill } from "react-icons/bs";
 import { BsSmartwatch } from "react-icons/bs";
 import { MdOutlineWatchLater } from "react-icons/md";
+import data from  './person.json';
+
+
 
 function Person() {
   const { toggle, setToggle } = useContext(UserContext);

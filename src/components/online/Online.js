@@ -1,6 +1,9 @@
 import React, { useContext } from "react";
 import "../../css/online.css";
 import { UserContext } from "../../App";
+import data from './online.json'
+
+
 
 function Online() {
   const { toggle, setToggle } = useContext(UserContext);

@@ -1,0 +1,69 @@
+[
+  {
+    "titleBlog": "בלוג",
+    "titlecategory": "THE FIT BLOG TOPICS",
+    "buttoncategory": [
+      "השראה",
+      "אימונים",
+      "פילאטיס",
+      "מאמיז",
+      "קורסים"
+    ]
+  },
+  {
+    "imgBlog": "https://fithouse.co.il/wp-content/uploads/2021/12/IMG_7177-scaled.jpg",
+    "titleblog": "מתכון לעצמאות- עראייס מפיתה מקמח מלא וסלמון/דג אחר טרי",
+    "author": "יובל כרמי, דיאטנית קלינית של קבוצת FIT | 24.04.2222",
+    "Categories": "השראה",
+    "id": 1
+  },
+  {
+    "imgBlog": "https://fithouse.co.il/wp-content/uploads/2022/04/IMG_7241-scaled.jpg",
+    "titleblog": "מתכון לעצמאות- עראייס מפיתה מקמח מלא וסלמון/דג אחר טרי",
+    "author": "יובל כרמי, דיאטנית קלינית של קבוצת FIT | 24.04.2222",
+    "Categories": "אימונים",
+    "id": 2
+  },
+  {
+    "imgBlog": "https://fithouse.co.il/wp-content/uploads/2021/12/WhatsApp-Image-2021-12-16-at-16.58.19.jpeg",
+    "titleblog": "מתכון לעצמאות- עראייס מפיתה מקמח מלא וסלמון/דג אחר טרי",
+    "author": "יובל כרמי, דיאטנית קלינית של קבוצת FIT | 24.04.2222",
+    "Categories": "פילאטיס",
+    "id": 2
+  },
+  {
+    "imgBlog": "https://fithouse.co.il/wp-content/uploads/2020/06/donats.jpg",
+    "titleblog": "מתכון לעצמאות- עראייס מפיתה מקמח מלא וסלמון/דג אחר טרי",
+    "author": "יובל כרמי, דיאטנית קלינית של קבוצת FIT | 24.04.2222",
+    "Categories": "השראה",
+    "id": 3
+  },
+  {
+    "imgBlog": "https://fithouse.co.il/wp-content/uploads/2020/06/salad3.jpg",
+    "titleblog": "מתכון לעצמאות- עראייס מפיתה מקמח מלא וסלמון/דג אחר טרי",
+    "author": "יובל כרמי, דיאטנית קלינית של קבוצת FIT | 24.04.2222",
+    "Categories": "קורסים",
+    "id": 4
+  },
+  {
+    "imgBlog": "https://fithouse.co.il/wp-content/uploads/2021/11/WhatsApp-Image-2021-11-29-at-14.17.29.jpeg",
+    "titleblog": "מתכון לעצמאות- עראייס מפיתה מקמח מלא וסלמון/דג אחר טרי",
+    "author": "יובל כרמי, דיאטנית קלינית של קבוצת FIT | 24.04.2222",
+    "Categories": "אימונים",
+    "id": 5
+  },
+  {
+    "imgBlog": "https://fithouse.co.il/wp-content/uploads/2020/06/tea-scaled.jpg",
+    "titleblog": "מתכון לעצמאות- עראייס מפיתה מקמח מלא וסלמון/דג אחר טרי",
+    "author": "יובל כרמי, דיאטנית קלינית של קבוצת FIT | 24.04.2222",
+    "Categories": "מאמיז",
+    "id": 6
+  },
+  {
+    "imgBlog": "https://fithouse.co.il/wp-content/uploads/2020/06/tea-scaled.jpg",
+    "titleblog": "מתכון לעצמאות- עראייס מפיתה מקמח מלא וסלמון/דג אחר טרי",
+    "author": "יובל כרמי, דיאטנית קלינית של קבוצת FIT | 24.04.2222",
+    "Categories": "מאמיז",
+    "id": 7
+  }
+]

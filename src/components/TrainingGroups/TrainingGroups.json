@@ -1,0 +1,30 @@
+[
+  {
+    "imageGroup": "https://images.pexels.com/photos/6111616/pexels-photo-6111616.jpeg?cs=srgb&dl=pexels-kampus-production-6111616.jpg&fm=jpg",
+    "text": "תרגול המשלב תרגילי פילאטיס מסורתיים בקצב ובעצימות גבוהים במטרה להתחמם ולהעלות את הדופק. קצב הנשימה עולה, האנרגיה העולה, בשיעור אנרגטי, תנועתי",
+    "title": "קארדיו פילאטיס",
+    "id": 0
+  },
+  {
+    "imageGroup": "https://images.pexels.com/photos/4498606/pexels-photo-4498606.jpeg?cs=srgb&dl=pexels-karolina-grabowska-4498606.jpg&fm=jpg ",
+    "text": "נשלב עבודה על שרירי ליבה בדופק משתנה עם משקלים נמוכים וחזרות שיעור בר הוא שיעור דינאמי ואנרגטי ששואב השראה מבלט",
+    "title": "קארדיו פילאטיס",
+    "id": 1
+  },
+  {
+    "imageGroup": "https://cdn.glitch.com/e4c45146-a1cb-43c3-86fe-35bf46516a43%2Fe.jpg?v=1560731959643",
+    "text":"השיעור מבוסס על מגוון רחב של תרגילים בשילוב מוזיקה מהנה ואנרגיה גבוהה מתאים לכולם, כולל לנשים בהריון ",
+    "title":"קארדיו פילאטיס",
+    "id":2
+  }, 
+  {
+    "imgeBg" : "https://images.unsplash.com/photo-1518310383802-640c2de311b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+  }, 
+  {
+    "titleBtn" : "אימוני קבוצות",
+    "btn1" : "Download our schedule",
+    "btn2" : "הורדת מערכת שבועית PDF",
+    "btn3" : " מערכת PDF מותאמת לנשים בהריון"
+
+  }
+  ]

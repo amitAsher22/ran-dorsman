@@ -1,7 +1,8 @@
 import React from 'react'
 import '../../css/SectionFourImages.css'
 import img5 from '../../images/img5.jpg'
-// import img3 from '../../images/img3.jpg'
+import data from './SectionFourImages.json'
+
 
 function SectionFourImages() {
   return (

@@ -1,6 +1,9 @@
 import React, { useState, useContext ,useEffect  } from "react";
 import { UserContext } from "../../App";
 import "../../css/blog.css";
+import data from './blog.json'
+
+
 
 function Blog() {
   const { toggle, setToggle } = useContext(UserContext);

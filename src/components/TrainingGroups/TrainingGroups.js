@@ -2,6 +2,10 @@ import React, { useState ,useContext , useEffect } from "react";
 import "../../css/TrainingGroups.css";
 import {UserContext} from '../../App'
 
+import data from './TrainingGroups.json'
+
+console.log(data);
+
 
 const TrainingGroups = () => {
   const {toggle , setToggle}  = useContext(UserContext)
@@ -87,21 +91,7 @@ const TrainingGroups = () => {
            </div>
          ))}
          </div>
-         {/* <div className="groupImagesAll">
-         <div> <img src="https://cdn.glitch.com/e4c45146-a1cb-43c3-86fe-35bf46516a43%2Fd.jpg?v=1560731955748" className="imgTraining" alt="img1"/> <p className="titleGroupImg">פונקציונלי</p></div>
-         <div> <img src="https://cdn.glitch.com/e4c45146-a1cb-43c3-86fe-35bf46516a43%2Ff.jpg?v=1560731959442" className="imgTraining" alt="img2"/> <p className="titleGroupImg">קארדיו פילאטיס</p></div>
-         <div> <img src="https://cdn.glitch.com/e4c45146-a1cb-43c3-86fe-35bf46516a43%2Ff.jpg?v=1560731959442" className="imgTraining" alt="img5"/> <p className="titleGroupImg">פילאטיס בר</p></div>
-         <div> <img src="https://cdn.glitch.com/e4c45146-a1cb-43c3-86fe-35bf46516a43%2Ff.jpg?v=1560731959442" className="imgTraining" alt="img5"/> <p className="titleGroupImg">פונקציונלי</p></div>
-         <div> <img src="https://cdn.glitch.com/e4c45146-a1cb-43c3-86fe-35bf46516a43%2Ff.jpg?v=1560731959442" className="imgTraining" alt="img5"/> <p className="titleGroupImg">יסודות היוגה</p></div>
-         <div> <img src="https://cdn.glitch.com/e4c45146-a1cb-43c3-86fe-35bf46516a43%2Fd.jpg?v=1560731955748" className="imgTraining" alt="img5"/> <p className="titleGroupImg">HIIT</p></div>
-         <div> <img src="https://cdn.glitch.com/e4c45146-a1cb-43c3-86fe-35bf46516a43%2Ff.jpg?v=1560731959442" className="imgTraining" alt="img5"/> <p className="titleGroupImg">אימוני כוח</p></div>
-         <div> <img src="https://cdn.glitch.com/e4c45146-a1cb-43c3-86fe-35bf46516a43%2Ff.jpg?v=1560731959442" className="imgTraining" alt="img5"/> <p className="titleGroupImg">אירובי דאנס</p></div>
-         <div> <img src="https://cdn.glitch.com/e4c45146-a1cb-43c3-86fe-35bf46516a43%2Ff.jpg?v=1560731959442" className="imgTraining" alt="img5"/> <p className="titleGroupImg">Power yoga</p></div>
-        
-         </div> */}
-        
-         
-       
+
       </div>
   
       </div>)}

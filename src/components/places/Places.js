@@ -3,6 +3,9 @@ import { AiOutlineSchedule } from 'react-icons/ai';
 import { GoLocation } from 'react-icons/go';
 import '../../css/places.css'
 import {UserContext} from '../../App'
+import data from './places.json'
+
+
 
 function Places() {
   const {toggle , setToggle}  = useContext(UserContext)

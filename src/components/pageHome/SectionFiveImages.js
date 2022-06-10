@@ -2,6 +2,7 @@ import React from 'react'
 import '../../css/SectionFiveImages.css'
 import img1 from '../../images/img1.jpg'
 import img2 from '../../images/img2.jpg'
+import data from './SectionFiveImages.json'
 
 
 function SectionFiveImages() {

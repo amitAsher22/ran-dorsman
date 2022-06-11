@@ -114,6 +114,12 @@
     width: 100%;
   }
  
+.slider-wrapper22{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 }
 
 /* ///////////////////////////////////////card swip images */

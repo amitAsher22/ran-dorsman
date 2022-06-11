@@ -249,6 +249,13 @@
   .bgAboutUs{
     height: 100%;
   }
-  
+  .slider-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .right{
+    width: 100%;
+  }
 }
 

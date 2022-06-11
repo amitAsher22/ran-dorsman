@@ -93,7 +93,6 @@ function Blog() {
 
   const singleBlog = (idBlog)=> {
    const specificBlog = blogs.find((item)=> item.id === idBlog)
-   console.log(specificBlog);
    setOneBlog(specificBlog);
 
   }

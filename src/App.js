@@ -7,12 +7,16 @@ import  TrainingGroups  from "./components/TrainingGroups/TrainingGroups";
 import  Subscribers  from "./components/Subscribers/Subscribers";
 import Places from "./components/places/Places";
 import Online from "./components/online/Online";
+import OneBlog from "./components/blog/OneBlog";
 
 import './css/app.css'
 import React ,{useState,createContext}  from 'react'
 import FloatingWhatsApp from 'react-floating-whatsapp'
 import Blog from "./components/blog/Blog";
 import Person from "./components/PersonTrain/Person";
+
+///
+
 
 
 
@@ -21,6 +25,7 @@ export const UserContext = createContext();
 
 function App() {
   const [toggle, setToggle] = useState('home')
+  
 
   return (
       <UserContext.Provider value={{toggle , setToggle}}>
@@ -38,6 +43,7 @@ function App() {
                 <Route path="/Blog" element={<Blog />} />
                 <Route path="/Online" element={<Online />} />
                 <Route path="/personal" element={<Person />} />
+                <Route path="/blog/:id" element={<OneBlog />} />
                
               
           </Routes>

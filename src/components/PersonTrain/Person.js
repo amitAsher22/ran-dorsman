@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext  } from "react";
 import { UserContext } from "../../App";
 import "../../css/person.css";
 import { AiOutlineColumnHeight } from "react-icons/ai";
@@ -6,12 +6,16 @@ import { MdOutlinePeople } from "react-icons/md";
 import { BsMenuButtonFill } from "react-icons/bs";
 import { BsSmartwatch } from "react-icons/bs";
 import { MdOutlineWatchLater } from "react-icons/md";
+import Counterup from "react-countup"
 import data from  './person.json';
 
 
 
 function Person() {
   const { toggle, setToggle } = useContext(UserContext);
+
+
+
   return (
     <div className={toggle}>
       <div className="sectionOne">
@@ -33,12 +37,12 @@ function Person() {
           </p>
           <p className="listP">
             <BsSmartwatch className="iconP" />
-            משך האימון: 50 דקות
+            משך האימון:   50 דקות
           </p>
         </div>
         <div className="leftPerson">
           <div className="divTime">
-            <p className="timeP">50</p>
+            <p className="timeP"><Counterup end={50}/></p>
             <p className="timeP">דקות</p>
           </div>
         </div>

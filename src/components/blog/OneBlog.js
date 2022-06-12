@@ -1,31 +1,48 @@
 import React , {useState ,useEffect }  from 'react'
 import {useParams}  from "react-router-dom";
 import data from "./blog.json"
-// import { Link } from 'react-router-dom';
+import '../../css/oneblog.css'
+import { Link } from "react-router-dom";
+import ButtonsBlogs from './ButtonsBlogs';
+
 
 function OneBlog() {
+
   const { id } = useParams();
-  console.log('id',typeof(id));
-  console.log('parse', parseInt(id))
-
-
- 
   const [blogData , setBlogData] = useState({})
 
   useEffect(()=>{
-    const product = data.find(item=> item.id === id) ///////// {id , img ,text }
+    const product = data.find(item=> item.id === id) 
     setBlogData(product);
 
   },[])
 
-  
+ 
+ 
   return (
     <div>
-      <img src={blogData.imgBlog} width={"100px"} height={"100px"} alt="img"/>
-      <h1>{blogData.titleblog}</h1>
-      <p>{blogData.text}</p>
+    <div className="mainDivBlog">
+      <section className="right22">
+          <h2 className="fitBlog">THE FIT BLOG TOPICS</h2>
+          <hr className="linebLOG" />
+          <ButtonsBlogs/>
+          {/* <div className="divButtonBlog">
+          <button className="btnBlog" >השראה</button>
+            <button className="btnBlog" >אימונים</button>
+            <button className="btnBlog" >פילאטיס</button>
+            <button className="btnBlog" >מאמיז</button>
+            <button className="btnBlog" >קורסים</button>
+          </div> */}
+          <hr className="linebLOG" />
+        </section>
+        <div className='blogMain'>
+      <h1 className='titleblogOne'>{blogData.titleblog}</h1>
+      <img className='blogImgOne' src={blogData.imgBlog}  alt="img"/>
+      <p className='textBlogOne'>{blogData.text}</p>
+        </div>
    
      
+    </div>
     </div>
   )
 }

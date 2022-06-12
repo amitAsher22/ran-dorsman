@@ -3,6 +3,7 @@ import { UserContext } from "../../App";
 import "../../css/blog.css";
 import data from './blog.json'
 import { Link } from "react-router-dom";
+import ButtonsBlogs from "./ButtonsBlogs";
 
 
 
@@ -99,18 +100,24 @@ function Blog() {
 
   return (
     <div className={toggle}>
-      <h1 className="titleBlog">בלוג</h1>
+      <h1 className="titleBlog">BLOG</h1>
       <div className="mainDivBlog">
         <section className="right22">
           <h2 className="fitBlog">THE FIT BLOG TOPICS</h2>
           <hr className="linebLOG" />
-          <div className="divButtonBlog">
+    
+          <ButtonsBlogs/>
+
+          {/* <div className="divButtonBlog">
             <button className="btnBlog" onClick={()=> setcategoryBlog("השראה")}>השראה</button>
             <button className="btnBlog"  onClick={()=> setcategoryBlog("אימונים")}>אימונים</button>
             <button className="btnBlog" onClick={()=> setcategoryBlog("פילאטיס")}>פילאטיס</button>
             <button className="btnBlog" onClick={()=> setcategoryBlog("מאמיז")}>מאמיז</button>
             <button className="btnBlog" onClick={()=> setcategoryBlog("קורסים")}>קורסים</button>
-          </div>
+          </div> */}
+         
+         
+    
           <hr className="linebLOG" />
         </section>
 

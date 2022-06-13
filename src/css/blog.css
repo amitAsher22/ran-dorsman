@@ -43,7 +43,8 @@
   border: none;
   padding: 1rem 1.3rem ;
   font-size: 0.8rem;
-  background-color: aquamarine;
+  background-color: rgb(88, 139, 122);
+  text-decoration: none;
 
 }
 
@@ -72,6 +73,10 @@
 
 .readmore{
 font-weight: bold;
+}
+
+.linkStyle{
+  text-decoration: none;
 }
 
 @media (orientation :portrait ){

@@ -3,16 +3,19 @@ import { UserContext } from "../../App";
 import "../../css/blog.css";
 import data from './blog.json'
 import { Link } from "react-router-dom";
-import ButtonsBlogs from "./ButtonsBlogs";
+import ButtonsBlogs from './ButtonsBlogs';
+
 
 
 
 
 
 function Blog() {
-  const { toggle, setToggle } = useContext(UserContext);
+  
   const [oneBlog , setOneBlog]= useState({})
-  const [categoryBlog , setcategoryBlog] = useState("")
+  // const [categoryBlog , setcategoryBlog] = useState("")
+  const { toggle, setToggle , categoryBlogss , setcategoryBlog} = useContext(UserContext);
+
   const [blogs, setBlogs] = useState([
     {
       imgBlog:
@@ -89,8 +92,10 @@ function Blog() {
   ]);
 
   useEffect(()=>{
-    setcategoryBlog('אימונים')
+    setcategoryBlog(categoryBlogss)
   },[])
+
+  console.log("categoryBlogss",categoryBlogss);
 
   const singleBlog = (idBlog)=> {
    const specificBlog = blogs.find((item)=> item.id === idBlog)
@@ -106,9 +111,9 @@ function Blog() {
           <h2 className="fitBlog">THE FIT BLOG TOPICS</h2>
           <hr className="linebLOG" />
     
-          <ButtonsBlogs/>
-
-          {/* <div className="divButtonBlog">
+      <ButtonsBlogs/>
+{/* 
+          <div className="divButtonBlog">
             <button className="btnBlog" onClick={()=> setcategoryBlog("השראה")}>השראה</button>
             <button className="btnBlog"  onClick={()=> setcategoryBlog("אימונים")}>אימונים</button>
             <button className="btnBlog" onClick={()=> setcategoryBlog("פילאטיס")}>פילאטיס</button>
@@ -124,7 +129,7 @@ function Blog() {
            {/* {categoryBlog === "" ? setcategoryBlog(blog) : blog.Categories === categoryBlog} */}
         <section className="left1">
           {blogs.filter((blog) => (
-           blog.Categories === categoryBlog
+           blog.Categories === categoryBlogss
           )).map((val , key)=> (
             <div key={key} className="blogShow">
               <img className="imgBlog1" src={val.imgBlog} alt={key} />

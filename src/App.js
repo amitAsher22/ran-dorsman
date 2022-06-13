@@ -25,10 +25,11 @@ export const UserContext = createContext();
 
 function App() {
   const [toggle, setToggle] = useState('home')
+  const [categoryBlogss , setcategoryBlog] = useState("אימונים")
   
 
   return (
-      <UserContext.Provider value={{toggle , setToggle}}>
+      <UserContext.Provider value={{toggle , setToggle ,categoryBlogss , setcategoryBlog}}  >
       <div className="app" >
             <Navbar />
            

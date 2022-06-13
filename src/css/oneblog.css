@@ -22,3 +22,19 @@
 .textBlogOne{
   width: 90%;
 }
+
+@media (orientation :portrait ){
+  .blogMain{
+    display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 100%;
+  justify-content: center;
+  align-items: right;
+  text-align: right;
+  }
+  .mainDivBlog{
+    justify-content: center;
+    align-items: center;
+  }
+}

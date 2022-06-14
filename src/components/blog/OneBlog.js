@@ -1,15 +1,16 @@
-import React , {useState ,useEffect }  from 'react'
+import React , {useState ,useEffect , useContext}  from 'react'
 import {useParams}  from "react-router-dom";
 import data from "./blog.json"
 import '../../css/oneblog.css'
 import { Link } from "react-router-dom";
 import ButtonsBlogs from './ButtonsBlogs';
-
+import { UserContext } from "../../App";
 
 function OneBlog() {
 
   const { id } = useParams();
   const [blogData , setBlogData] = useState({})
+  const { toggle, setToggle , categoryBlogss , setcategoryBlog} = useContext(UserContext);
 
   useEffect(()=>{
     const product = data.find(item=> item.id === id) 
@@ -20,7 +21,7 @@ function OneBlog() {
  
  
   return (
-    <div>
+    <div className={toggle}>
     <div className="mainDivBlog">
       <section className="right22">
           <h2 className="fitBlog">THE FIT BLOG TOPICS</h2>

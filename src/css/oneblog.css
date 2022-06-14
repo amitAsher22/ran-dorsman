@@ -27,8 +27,8 @@
   .blogMain{
     display: flex;
   flex-direction: column;
-  width: 90%;
-  height: 100%;
+  width: 50%;
+  
   justify-content: center;
   align-items: right;
   text-align: right;

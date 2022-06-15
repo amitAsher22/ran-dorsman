@@ -76,7 +76,6 @@ function AboutUs() {
     },
   ]);
 
- 
 
   useEffect(() => {
     setoneCoach(coaches[number]); //// 2
@@ -89,8 +88,6 @@ function AboutUs() {
     setShow(true);
   
   };
-
-  
 
   return (
     <div>

@@ -177,7 +177,7 @@ function Email() {
           </div>
         </div>
       </div>
-      <span className="developer">©2022 by Amit Asher. Herzliya</span>
+      <span className="developer"> זכויות יוצרים © 2022   by Amit Asher </span>
     </div>
   );
 }

@@ -8,9 +8,11 @@ import  Subscribers  from "./components/Subscribers/Subscribers";
 import Places from "./components/places/Places";
 import Online from "./components/online/Online";
 import OneBlog from "./components/blog/OneBlog";
+import Admin from './components/admin/Admin';
+import Page404 from "./components/404/Page404";
 
-import './css/app.css'
-import React ,{useState,createContext}  from 'react'
+import './css/app.css';
+import React ,{useState,createContext}  from 'react';
 import FloatingWhatsApp from 'react-floating-whatsapp'
 import Blog from "./components/blog/Blog";
 import Person from "./components/PersonTrain/Person";
@@ -36,7 +38,6 @@ function App() {
             <Routes >
 
                 <Route path="/" element={<Home />} />
-                {/* <Route path="/gallery" element={<GalleryImages />} /> */}
                 <Route path="/AboutUs" element={<AboutUs />} />
                 <Route path="/Groups" element={<TrainingGroups />} />
                 <Route path="/Subscribers" element={<Subscribers />} />
@@ -45,11 +46,15 @@ function App() {
                 <Route path="/Online" element={<Online />} />
                 <Route path="/personal" element={<Person />} />
                 <Route path="/blog/:id" element={<OneBlog />} />
+                <Route path="/admin" element={<Admin />} />
+                <Route path="*" element={<Page404 />} />
+
                
               
           </Routes>
        
-          <FloatingWhatsApp phoneNumber="+972523157737"  darkMode={true} allowClickAway={true}  notification={true} styles={{marginRight:"10px"}} />
+          <FloatingWhatsApp phoneNumber="+972523157737"  darkMode={true} allowClickAway={true}  notification={true} styles={{marginRight:"10px"}} avatar="https://cdn.pixabay.com/photo/2022/06/07/09/33/dance-7247907__340.jpg" statusMessage="WhatsApp" accountName="מאמן כושר- אליק" chatMessage="מה שלומך?😃
+           איך אני יכול לעזור לך?  "/>
   
         
       </div>

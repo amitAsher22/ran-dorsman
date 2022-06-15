@@ -1,32 +1,79 @@
-import React, { useContext } from "react";
+import React, { useContext , useEffect , useState } from "react";
 import "../../css/Subscribers.css";
 import { UserContext } from "../../App";
 import data from './subscribers.json'
+import { request } from 'graphql-request';
 
 
 
 const Subscribers = () => {
   const { toggle, setToggle } = useContext(UserContext);
+  const [mainData , setMainData] = useState(data)
+
+  const [products, setProducts] = useState(null);
+
+  useEffect(() => {
+    const fetchProducts = async () => {
+
+      const { subscribers  } = await request(
+        'https://api-us-west-2.graphcms.com/v2/cl4fkql1705br01xv4dcjdol1/master',
+        `
+        query{
+          subscribers {
+            titlepage
+            backgroundimage {
+              url
+             
+            }
+            price
+            subscriptionMonthly
+            lessonMount
+            imageLeft{
+              url
+            }
+            titleBetweenCards
+            titleOneMiddleCard
+            titleTwoCard
+            titleTreeCard
+            titleCardLeftCard
+            cardTitleLeft
+            titleTreeCardLeftLine
+          }
+        }
+        
+        
+        
+    `
+      );
+     
+      setProducts(subscribers);
+    };
+    
+    fetchProducts();
+  }, []);
+  
+  console.log(products);
+ 
 
   return (
     <div className={toggle}>
       <div className="testpos">
         <div className="backgrounsSub">
-          <h1 className="titleGroups">מנויים</h1>
+          <h1 className="titleGroups">{products?.length ? products[0].titlepage : null}</h1>
           <div className="positionSubscribers">
-            <div className="Route">
-              <p>מנוי שנתי בסיס</p>
-              <p className="strong1">
-                <strong>240 ש"ח לחודש</strong>
+            <div className="Route" >
+              <p>{ products?.length ? products[0].subscriptionMonthly : null}</p>
+              <p >
+                <strong>{products?.length ? products[0].price : null}</strong>
               </p>
-              <p>עד 4 שיעורי סטודיו בחודש*</p>
+              <p>{products?.length ? products[0].lessonMount : null}</p>
             </div>
             <div className="Route">
-              <p>מנוי שנתי מורחב</p>
-              <p className="strong1">
-                <strong>350 ש"ח לחודש</strong>
+              <p>{mainData[3].title1}</p>
+              <p >
+                <strong>{mainData[3].title2}</strong>
               </p>
-              <p>עד 10 שיעורי סטודיו בחודש*</p>
+              <p>{mainData[3].title3}</p>
             </div>
 
             <div className="Route">
@@ -40,7 +87,7 @@ const Subscribers = () => {
             <div className="RouteImg">
               <img
                 className="imgSub"
-                src="https://cdn.glitch.com/e4c45146-a1cb-43c3-86fe-35bf46516a43%2Fa.jpg?v=1560731966020"
+                src={products?.length ? products[0].backgroundimage.url : null}
                 alt="someimg"
               />
             </div>
@@ -48,31 +95,30 @@ const Subscribers = () => {
 
           <div>
             <p className="pSub">
-              ניתן לשדרג כל אחד ממנויי הסטודיו למנוי משולב עם פילאטיס מכשירים: 4
-              שיעורים בתוספת של 270 ש"ח בחודש
+            {products?.length ? products[0].titleBetweenCards : null}
             </p>
           </div>
           <div className="positionSubscribers">
             <div className="Route2">
               <img
                 className="imgSub"
-                src="https://cdn.glitch.com/e4c45146-a1cb-43c3-86fe-35bf46516a43%2Fa.jpg?v=1560731966020"
+                src={products?.length ? products[0].imageLeft.url : null}
               />
             </div>
             <div className="Route3">
-              <p>מנוי שנתי בסיס</p>
+              <p> {products?.length ? products[0].titleOneMiddleCard : null}</p>
               <p className="strong1">
-                <strong>240 ש"ח לחודש</strong>
+                <strong>{products?.length ? products[0].titleTwoCard : null}</strong>
               </p>
-              <p>עד 4 שיעורי סטודיו בחודש*</p>
+              <p>{products?.length ? products[0].titleTreeCard : null}</p>
             </div>
 
             <div className="Route3">
-              <p>מנוי שנתי בסיס</p>
+              <p>{products?.length ? products[0].titleCardLeftCard : null}</p>
               <p className="strong1">
-                <strong>240 ש"ח לחודש</strong>
+                <strong>{products?.length ? products[0].cardTitleLeft : null}</strong>
               </p>
-              <p>עד 4 שיעורי סטודיו בחודש*</p>
+              <p>{products?.length ? products[0].titleTreeCardLeftLine : null}</p>
             </div>
           </div>
           <div className="btnSubscribers">

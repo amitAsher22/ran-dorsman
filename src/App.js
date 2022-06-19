@@ -17,6 +17,10 @@ import FloatingWhatsApp from "react-floating-whatsapp";
 import Blog from "./components/blog/Blog";
 import Person from "./components/PersonTrain/Person";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+// ..
+AOS.init();
 ///
 
 export const UserContext = createContext();

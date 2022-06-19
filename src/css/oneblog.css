@@ -1,4 +1,4 @@
-.blogMain{
+.blogMain {
   display: flex;
   flex-direction: column;
   text-align: right;
@@ -8,32 +8,33 @@
   font-family: 'Heebo', sans-serif;
 }
 
-.blogImgOne{
+.blogImgOne {
   width: 90%;
   height: 30vw;
 }
 
-.titleblogOne{
+.titleblogOne {
   font-size: 15px;
   margin-bottom: 1rem;
   font-weight: bolder;
 }
 
-.textBlogOne{
+.textBlogOne {
   width: 90%;
 }
 
-@media (orientation :portrait ){
-  .blogMain{
+@media (orientation :portrait) {
+  .blogMain {
     display: flex;
-  flex-direction: column;
-  width: 50%;
-  
-  justify-content: center;
-  align-items: right;
-  text-align: right;
+    flex-direction: column;
+
+    width: 68%;
+    justify-content: center;
+    align-items: right;
+    text-align: right;
   }
-  .mainDivBlog{
+
+  .mainDivBlog {
     justify-content: center;
     align-items: center;
   }

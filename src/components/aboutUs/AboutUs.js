@@ -182,6 +182,7 @@ function AboutUs() {
                       className="imgCoach"
                       src={coach.imageCoach}
                       alt={coach.name}
+                      data-aos="flip-left"
                     />
                     <p className="nameOfCoach">{coach.name}</p>
                   </div>

@@ -105,7 +105,11 @@ const TrainingGroups = () => {
 
             <div className="groupImagesAll">
               {group.map((item, index) => (
-                <div onClick={() => specificCoache(item.id)} key={index}>
+                <div
+                  data-aos="flip-left"
+                  onClick={() => specificCoache(item.id)}
+                  key={index}
+                >
                   <img
                     src={item.imageGroup}
                     className="imgTraining"

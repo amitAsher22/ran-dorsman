@@ -1,15 +1,15 @@
-import React, { useState, useEffect ,useContext } from "react";
-import {UserContext} from '../../App'
+import React, { useState, useEffect, useContext } from "react";
+import { UserContext } from "../../App";
 import "../../css/aboutUs.css";
-import data from './aboutUs.json'
-
-
+import data from "./aboutUs.json";
+import { request } from "graphql-request";
 
 function AboutUs() {
-  const {toggle , setToggle}  = useContext(UserContext)
+  const { toggle, setToggle } = useContext(UserContext);
   const [show, setShow] = useState(false);
   const [oneCoach, setoneCoach] = useState({});
   const [number, setNumber] = useState(0);
+  const [products, setProducts] = useState(null);
   const [coaches, setCoaches] = useState([
     {
       imageCoach:
@@ -76,89 +76,121 @@ function AboutUs() {
     },
   ]);
 
-
   useEffect(() => {
     setoneCoach(coaches[number]); //// 2
   }, [number]);
 
   const specificCoache = (num) => {
     setNumber(num);
-    const oneCoach = coaches.find((element) => element.id === num); 
+    const oneCoach = coaches.find((element) => element.id === num);
     setoneCoach(oneCoach);
     setShow(true);
-  
   };
+
+  useEffect(() => {
+    const fetchProducts = async () => {
+      const { aboutuses } = await request(
+        "https://api-us-west-2.graphcms.com/v2/cl4fkql1705br01xv4dcjdol1/master",
+        `
+        query MyQuery {
+          aboutuses {
+            mainTitle
+            textUs
+            titleCoach
+            coachOne
+          }
+        }
+        
+        
+    `
+      );
+
+      setProducts(aboutuses);
+    };
+
+    fetchProducts();
+  }, []);
+
+  console.log(products);
 
   return (
     <div>
-    <div className={toggle}>
-  
-      {show ? (
-        <main className="main"  >
-          <section className="top"  >
-          <i  class="material-icons" ></i>
-            <i class="material-icons"  onClick={() => setShow(!show)}>close</i>
-          </section>
+      <div className={toggle}>
+        {show ? (
+          <main className="main">
+            <section className="top">
+              <i class="material-icons"></i>
+              <i class="material-icons" onClick={() => setShow(!show)}>
+                close
+              </i>
+            </section>
 
-          <div className="slider-wrapper"  >
-            <section className="left">
-             
-              <i class="material-icons"   onClick={
-                  () =>
+            <div className="slider-wrapper">
+              <section className="left">
+                <i
+                  class="material-icons"
+                  onClick={() =>
                     setNumber((number) =>
                       number >= coaches.length - 1 ? 0 : number + 1
                     )
-               
-                }>arrow_back_ios</i>
+                  }
+                >
+                  arrow_back_ios
+                </i>
 
+                <img
+                  className="imgOpen"
+                  src={oneCoach.imageCoach}
+                  alt={oneCoach.name}
+                />
 
-              <img src={oneCoach.imageCoach} alt={oneCoach.name} />
-            
-
-                <i className="material-icons"   onClick={() => 
-                    setNumber(number => number <= 0 ? coaches.length - 1 : number - 1 )
-                  }   >arrow_forward_ios</i>
-                  
-            </section>
-            <section className="right" onClick={() => setShow(!show)}>
-              <h2>{oneCoach.name}</h2>
-              <p>{oneCoach.text}</p>
-            </section>
-          </div>
-        </main>
-      ) : (
-        <div className="positionAboutUs">
-        <div className="bgAboutUs" >
-          <div className="paragrapAboutUs">
-            <h1 className="WhoUs">מי אנחנו</h1>
-            <p className="Ptext">
-              שיעור בר הוא שיעור דינאמי ואנרגטי ששואב השראה מבלט, פילאטיס ועבודה
-              אירובית ואפילו מתבצעו בחלקו מול בר בלט משלב אלמנטים של כוחף. נשלב
-              עבודה על שרירי ליבה בדופק משתנה עם משקלים נמוכים שיעור בר הוא
-              שיעור דינאמי ואנרגטי ששואב השראה מבלט, פילאטיס ועבודה אירובית
-              ואפילו מתבצעו וגמישות ועובר בין כל קבוצות השרירים בגובחלק משלב
-              אלמנטים של כוח וגמישות ועובר בין כל קבוצות השרירים בגוף. מול בר
-              בלט נשלב עבודה על שרירי ליבה בדופק משתנה עם משקלים נמוכים
-            </p>
-            <h1 className="titleTeam">הצוות </h1>
-          </div>
-          <div className="divText">
-          {coaches.map((coach, index) => (
-            <div  onClick={() => specificCoache(coach.id)} key={index}>
-              <img
-                className="imgCoach"
-                src={coach.imageCoach}
-                alt={coach.name}
-              />
-              <p className="nameOfCoach">{coach.name}</p>
+                <i
+                  className="material-icons"
+                  onClick={() =>
+                    setNumber((number) =>
+                      number <= 0 ? coaches.length - 1 : number - 1
+                    )
+                  }
+                >
+                  arrow_forward_ios
+                </i>
+              </section>
+              <section className="right" onClick={() => setShow(!show)}>
+                <h2>{oneCoach.name}</h2>
+                <p>{oneCoach.text}</p>
+              </section>
             </div>
-          ))}
+          </main>
+        ) : (
+          <div className="positionAboutUs">
+            <div className="bgAboutUs">
+              <div className="paragrapAboutUs">
+                <p className="WhoUs1">
+                  {products?.length ? products[0].mainTitle : null}
+                </p>
+                <p className="Ptext">
+                  {products?.length ? products[0].textUs : null}
+                </p>
+                <p className="titleTeam">
+                  {products?.length ? products[0].titleCoach : null}{" "}
+                </p>
+              </div>
+              <div className="divText">
+                {coaches.map((coach, index) => (
+                  <div onClick={() => specificCoache(coach.id)} key={index}>
+                    <img
+                      className="imgCoach"
+                      src={coach.imageCoach}
+                      alt={coach.name}
+                    />
+                    <p className="nameOfCoach">{coach.name}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
-        </div>
-        </div>
-       
-      )}
-    </div>
+        )}
+      </div>
     </div>
   );
 }

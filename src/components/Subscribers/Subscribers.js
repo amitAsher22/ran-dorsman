@@ -1,22 +1,19 @@
-import React, { useContext , useEffect , useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "../../css/Subscribers.css";
 import { UserContext } from "../../App";
-import data from './subscribers.json'
-import { request } from 'graphql-request';
-
-
+import data from "./subscribers.json";
+import { request } from "graphql-request";
 
 const Subscribers = () => {
   const { toggle, setToggle } = useContext(UserContext);
-  const [mainData , setMainData] = useState(data)
+  const [mainData, setMainData] = useState(data);
 
   const [products, setProducts] = useState(null);
 
   useEffect(() => {
     const fetchProducts = async () => {
-
-      const { subscribers  } = await request(
-        'https://api-us-west-2.graphcms.com/v2/cl4fkql1705br01xv4dcjdol1/master',
+      const { subscribers } = await request(
+        "https://api-us-west-2.graphcms.com/v2/cl4fkql1705br01xv4dcjdol1/master",
         `
         query{
           subscribers {
@@ -38,6 +35,7 @@ const Subscribers = () => {
             titleCardLeftCard
             cardTitleLeft
             titleTreeCardLeftLine
+            
           }
         }
         
@@ -45,32 +43,33 @@ const Subscribers = () => {
         
     `
       );
-     
+
       setProducts(subscribers);
     };
-    
+
     fetchProducts();
   }, []);
-  
+
   console.log(products);
- 
 
   return (
     <div className={toggle}>
       <div className="testpos">
         <div className="backgrounsSub">
-          <h1 className="titleGroups">{products?.length ? products[0].titlepage : null}</h1>
+          <p className="titleGroups">
+            {products?.length ? products[0].titlepage : null}
+          </p>
           <div className="positionSubscribers">
-            <div className="Route" >
-              <p>{ products?.length ? products[0].subscriptionMonthly : null}</p>
-              <p >
+            <div className="Route">
+              <p>{products?.length ? products[0].subscriptionMonthly : null}</p>
+              <p>
                 <strong>{products?.length ? products[0].price : null}</strong>
               </p>
               <p>{products?.length ? products[0].lessonMount : null}</p>
             </div>
             <div className="Route">
               <p>{mainData[3].title1}</p>
-              <p >
+              <p>
                 <strong>{mainData[3].title2}</strong>
               </p>
               <p>{mainData[3].title3}</p>
@@ -95,7 +94,7 @@ const Subscribers = () => {
 
           <div>
             <p className="pSub">
-            {products?.length ? products[0].titleBetweenCards : null}
+              {products?.length ? products[0].titleBetweenCards : null}
             </p>
           </div>
           <div className="positionSubscribers">
@@ -108,7 +107,9 @@ const Subscribers = () => {
             <div className="Route3">
               <p> {products?.length ? products[0].titleOneMiddleCard : null}</p>
               <p className="strong1">
-                <strong>{products?.length ? products[0].titleTwoCard : null}</strong>
+                <strong>
+                  {products?.length ? products[0].titleTwoCard : null}
+                </strong>
               </p>
               <p>{products?.length ? products[0].titleTreeCard : null}</p>
             </div>
@@ -116,9 +117,13 @@ const Subscribers = () => {
             <div className="Route3">
               <p>{products?.length ? products[0].titleCardLeftCard : null}</p>
               <p className="strong1">
-                <strong>{products?.length ? products[0].cardTitleLeft : null}</strong>
+                <strong>
+                  {products?.length ? products[0].cardTitleLeft : null}
+                </strong>
               </p>
-              <p>{products?.length ? products[0].titleTreeCardLeftLine : null}</p>
+              <p>
+                {products?.length ? products[0].titleTreeCardLeftLine : null}
+              </p>
             </div>
           </div>
           <div className="btnSubscribers">

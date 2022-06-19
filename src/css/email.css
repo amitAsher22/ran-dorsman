@@ -1,71 +1,76 @@
-.bgEmail{
+.bgEmail {
   background-color: rgb(240, 234, 231);
   display: flex;
 
   justify-content: space-evenly;
   padding: 70px;
-  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
-  
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+
 }
 
-.rightEmailDiv{
+.rightEmailDiv {
   display: flex;
   flex-direction: column;
   justify-content: center;
- 
- 
+
+
+
 }
 
-.titleEmail{
+.titleEmail {
   text-align: center;
+  font-size: 2rem;
+
 }
 
-.inputEmail{
+.inputEmail {
   padding: 20px;
   width: 500px;
   border: none;
   margin: 2px;
   font-size: 15px;
+  background: transparent;
+
 }
 
-.leftEmailDiv{
+.leftEmailDiv {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
 
-  
+
 }
 
-.instaFacePosition{
+.instaFacePosition {
   display: flex;
   justify-content: center;
 
   padding: 10px 0px;
 }
 
-.responsePhone{
+.responsePhone {
   color: rgb(77, 77, 77);
   font-size: 15px;
 }
 
-.emailRan{
+.emailRan {
   text-decoration: underline;
   color: black;
- 
+
 }
 
-.phoneRan{
+.phoneRan {
   text-decoration: underline;
   color: black;
- 
+
 }
 
-.btnEmail{
+.btnEmail {
   border: none;
   margin: auto;
   border-radius: 12px;
-  padding: 7px  40px;
+  padding: 7px 40px;
   background-color: rgb(38, 55, 36);
   font-weight: bold;
   font-size: 1rem;
@@ -73,11 +78,11 @@
   font-weight: 100;
   width: 40%;
   padding: 10px;
-  
+
 }
 
-.developer{
-display: flex;
+.developer {
+  display: flex;
   justify-content: center;
   background-color: rgb(240, 234, 231);
   color: rgb(112, 112, 112);
@@ -86,12 +91,17 @@ display: flex;
 
 
 
-@media (orientation :portrait ){
-  .rightEmailDiv{
+@media (orientation :portrait) {
+  .rightEmailDiv {
     display: flex;
   }
-  .aftersend{
+
+  .aftersend {
     text-align: center;
   }
- 
+
+  .developer {
+    padding: 1rem;
+  }
+
 }

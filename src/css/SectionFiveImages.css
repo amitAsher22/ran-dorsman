@@ -1,28 +1,28 @@
-.gridImages{
+.gridImages {
   display: grid;
   grid-template-columns: 1fr 1fr 2.1fr;
- 
 
-  width:100%;
-  font-size:20px;
+
+  width: 100%;
+  font-size: 20px;
   font-weight: 100;
   column-gap: 0.4rem;
-  padding:0.4rem
-
+  padding: 0.4rem
 }
 
-.bgdivFive{
+.bgdivFive {
   background-color: aliceblue;
   display: flex;
   text-align: center;
   justify-content: center;
- 
+
 }
 
-.bg3divFive{
+.bg3divFive {
   margin: auto;
 }
-.btnSectionTwoFive{
+
+.btnSectionTwoFive {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,10 +32,10 @@
   padding: 30px;
 }
 
-.btnSctionTwoFive{
+.btnSctionTwoFive {
   border: none;
   border-radius: 12px;
-  padding: 7px  40px;
+  padding: 7px 40px;
   background-color: rgb(38, 55, 36);
   font-weight: bold;
   font-size: 1rem;
@@ -43,26 +43,32 @@
   font-weight: 100;
 }
 
-.btnSctionTwoFive:hover{
+.btnSctionTwoFive:hover {
   cursor: pointer;
 }
 
-.bg1Five{
+.bg1Five {
   object-fit: cover;
-  
+
   background-repeat: no-repeat;
   width: 100%;
   height: 500px;
 }
 
-.bg2Five{
+.bg2Five {
   object-fit: cover;
- 
+
   background-repeat: no-repeat;
   width: 100%;
   height: 500px;
 }
 
-.pointFive{
+.pointFive {
   list-style-type: none;
+}
+
+@media (orientation :portrait) {
+  .bgdivFive {
+    padding: 2rem
+  }
 }

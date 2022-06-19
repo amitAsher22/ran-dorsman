@@ -1,4 +1,4 @@
-.sectionOne{
+.sectionOne {
   display: flex;
   justify-content: space-around;
   padding: 5rem;
@@ -11,9 +11,10 @@
   -o-background-size: cover;
   background-size: cover;
   background-position: center;
-  
+
 }
-.leftPerson{
+
+.leftPerson {
   border: 0.2rem solid rgb(240, 240, 240);
   width: 300px;
   height: 250px;
@@ -22,95 +23,97 @@
   flex-direction: column;
   align-items: center;
   padding: 2rem;
- 
 
 
-  
+
+
 }
 
-.divTime{
+.divTime {
   display: flex;
   flex-direction: column;
   text-align: center;
-  
+
   font-size: 2.5rem;
 
 }
 
-.timeP{
+.timeP {
   margin: 0;
   color: white;
 }
 
-.colorPersonT{
+.colorPersonT {
   font-size: 5rem;
   color: white;
 }
 
-.CTrain{
+.CTrain {
   color: rgb(58, 194, 62);
 }
 
-.iconP{
+.iconP {
   font-size: 1rem;
   margin-left: 0.5rem;
   color: rgb(58, 194, 62);
 }
 
-.listP{
+.listP {
   margin: 0px;
   color: white;
 }
 
 /* ///////////////////////////////////////////////////sectiontwo */
 
-.sectionTwo{
+.sectionTwo {
   display: grid;
   grid-template-columns: 250px 250px 250px 1fr;
   width: 90%;
- justify-content: space-evenly;
- margin: auto;
- padding: 3rem;
- gap: 2rem;
+  justify-content: space-evenly;
+  margin: auto;
+  padding: 3rem;
+  gap: 2rem;
 }
 
-.div2{
+.div2 {
   width: 15rem;
-  height: 60%;
+  height: 90%;
   padding: 1rem;
   border: 1px solid gainsboro;
   background-color: #f7f7f7;
   text-align: center;
- 
+
 }
 
-.div3{
+.div3 {
   width: 15rem;
   height: 50%;
   border: 1px solid gainsboro;
   background-color: #f7f7f7;
   text-align: center;
- 
- 
+
+
 }
 
-.imgPerson{
+.imgPerson {
   width: 100%;
-   
+
 }
 
-.tDiv1{
+.tDiv1 {
   font-size: 2rem;
 }
 
-.colortextDiv1{
+.colortextDiv1 {
   color: grey;
 }
 
-.colorUl{
-  color: rgb(58, 194, 62);;
+.colorUl {
+  color: rgb(58, 194, 62);
+  ;
 }
-.btnDiv2{
+
+.btnDiv2 {
   width: 100%;
   border: none;
   padding: 0.5rem;
@@ -118,43 +121,47 @@
   color: white;
 }
 
-.divBtnDiv1{
+.divBtnDiv1 {
   width: 100%;
 }
 
-.point1{
+.point1 {
   list-style-type: none;
-  
+
 }
 
-.nameDiv3{
+.nameDiv3 {
   padding: 1rem;
   font-size: 1.2rem;
 }
-.listFont{
+
+.listFont {
   font-size: 1.5rem;
   color: grey;
 }
 
-.clock1{
+.clock1 {
   color: rgb(58, 194, 62);
 }
 
-@media (orientation :portrait ){
-  .sectionOne{
+@media (orientation :portrait) {
+  .sectionOne {
     display: flex;
     flex-direction: column;
     width: 100%;
     padding: 1rem;
     align-items: center;
   }
-  .listP{
+
+  .listP {
     font-size: 1.8rem;
   }
-  .iconP{
+
+  .iconP {
     font-size: 1.5rem;
   }
-  .sectionTwo{
+
+  .sectionTwo {
     display: flex;
     flex-direction: column;
     width: 100%;

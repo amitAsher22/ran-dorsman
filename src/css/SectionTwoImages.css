@@ -1,32 +1,30 @@
-.gridImages{
+.gridImages {
   display: grid;
   grid-template-columns: 0.5fr 1fr 0.5fr;
-  
   width: 100%;
   font-size: 20px;
   font-weight: 100;
   gap: 0.4rem;
-  padding:0.4rem
- 
-
+  padding: 0.4rem
 }
 
-.bg1{
+.bg1 {
   object-fit: cover;
-  
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 700px;
-}
-.bg2{
-  object-fit: cover;
- 
+
   background-repeat: no-repeat;
   width: 100%;
   height: 700px;
 }
 
-.bgTwo{
+.bg2 {
+  object-fit: cover;
+
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 700px;
+}
+
+.bgTwo {
   background-color: aliceblue;
   display: flex;
   text-align: center;
@@ -35,21 +33,18 @@
 
 }
 
- .bg3{
+.bg3 {
   background-color: aliceblue;
   display: flex;
   text-align: center;
   justify-content: center;
   margin: auto;
-  
-  
-
 
 }
 
 
 
-.btnSectionTwo{
+.btnSectionTwo {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -60,10 +55,10 @@
 
 }
 
-.btnSctionTwo{
+.btnSctionTwo {
   border: none;
   border-radius: 12px;
-  padding: 7px  40px;
+  padding: 7px 40px;
   background-color: rgb(38, 55, 36);
   font-weight: bold;
   font-size: 1rem;
@@ -71,7 +66,17 @@
   font-weight: 100;
 }
 
-.btnSctionTwo:hover{
+.btnSctionTwo:hover {
   cursor: pointer;
 }
 
+.title-section-two {
+  margin-bottom: 2rem;
+}
+
+@media (orientation :portrait) {
+
+  .bgTwo {
+    padding: 2rem;
+  }
+}

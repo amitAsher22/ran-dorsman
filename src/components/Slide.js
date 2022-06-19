@@ -1,10 +1,7 @@
-import React, { useState ,useEffect } from "react";
-import data from './slide.json'
-
-
+import React, { useState, useEffect } from "react";
+import data from "./slide.json";
 
 function Slide() {
-
   const [show, setShow] = useState(false);
   const [oneCoach, setoneCoach] = useState({});
   const [number, setNumber] = useState();
@@ -33,9 +30,9 @@ function Slide() {
     },
   ]);
 
-  useEffect(()=>{
-    setoneCoach(coaches[number])
-  },[number])
+  useEffect(() => {
+    setoneCoach(coaches[number]);
+  }, [number]);
 
   const specificCoache = (num) => {
     setNumber(num);
@@ -56,28 +53,23 @@ function Slide() {
 
           <div className="slider-wrapper">
             <section className="left">
-              
-           
               <button
                 onClick={() => (
-                
-                  setNumber(number + 1),
-                  setoneCoach(coaches[number])
+                  setNumber(number + 1), setoneCoach(coaches[number])
                 )}
               >
                 ⬅
               </button>
               <img src={oneCoach.imageCoach} alt={oneCoach.name} />
-                <button
-                  onClick={() => (
-                    setNumber(number - 1 ),
-                    console.log(number),
-                    setoneCoach(coaches[number])
-                  )}
-                >
-                  ➡
-                </button>
-             
+              <button
+                onClick={() => (
+                  setNumber(number - 1),
+                  console.log(number),
+                  setoneCoach(coaches[number])
+                )}
+              >
+                ➡
+              </button>
             </section>
             <section className="right">
               <h2>{oneCoach.name}</h2>
@@ -88,7 +80,7 @@ function Slide() {
       ) : (
         <div className="containerImages">
           <div className="paragrapAboutUs">
-            <h1 className="WhoUs">מי אנחנו</h1>
+            <p className="WhoUs1">מי אנחנו</p>
             <p className="Ptext">
               שיעור בר הוא שיעור דינאמי ואנרגטי ששואב השראה מבלט, פילאטיס ועבודה
               אירובית ואפילו מתבצעו בחלקו מול בר בלט משלב אלמנטים של כוחף. נשלב
@@ -98,7 +90,7 @@ function Slide() {
               אלמנטים של כוח וגמישות ועובר בין כל קבוצות השרירים בגוף. <p></p>ו
               מול בר בלט נשלב עבודה על שרירי ליבה בדופק משתנה עם משקלים נמוכים{" "}
             </p>
-            <h1 className="titleTeam">הצוות והמורים</h1>
+            <p className="titleTeam">הצוות והמורים</p>
           </div>
           {coaches.map((coach, index) => (
             <div onClick={() => specificCoache(index)} key={index}>

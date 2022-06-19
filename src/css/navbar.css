@@ -1,112 +1,122 @@
-
-.banbarPosition{
+.banbarPosition {
   width: 70rem;
   list-style: none;
   display: flex;
-  
-  justify-content: space-between;
+  gap: 20PX;
+  justify-content: center;
   margin: auto;
- font-size: 1rem;
+  font-size: 1rem;
   padding: 1.5rem 2px;
- 
+
 }
 
-.page:hover{
+.page:hover {
   cursor: pointer;
- 
+
 }
 
-svg{
-  
+svg {
+
   font-size: 30px;
 }
-svg:hover{
+
+svg:hover {
   cursor: pointer;
 }
-.svgIcon{
-    margin-right: 15px;
-    font-size: 20px;
+
+.svgIcon {
+  margin-right: 10px;
+  font-size: 20px;
 }
 
-.socialMedia{
+.socialMedia {
   display: flex;
-  align-items: center;
+
 }
 
-.logoRan{
+.logoRan {
   width: 70px;
   height: 30px;
   background-color: black;
 }
 
-.hamburgarIcons{
+.hamburgarIcons {
   display: none;
- 
+
 }
 
-.home1{
+.home1 {
   display: none;
 }
-.linkStyle{
+
+.linkStyle {
   text-decoration: none;
   color: black;
- 
+
 }
-.linkStyle:hover{
-  color : black
+
+.linkStyle:hover {
+  color: black
 }
 
 /* //////////////////// media query */
 
-@media (orientation :portrait ){
-  .banbarPosition{
+@media (orientation :portrait) {
+  .banbarPosition {
     display: none;
 
   }
-  .hamburgarIcons{
+
+  .hamburgarIcons {
     display: flex;
     justify-content: space-between;
     margin-top: 5.5rem;
-    padding: 1.5rem ;
-   
+    padding: 1.5rem;
+
   }
-  .hamburgarIcons2{
+
+  .hamburgarIcons2 {
     display: flex;
     justify-content: center;
     gap: 1rem;
-   
+
   }
-  .home{
+
+  .home {
     display: block;
   }
- 
-.gridImages{
-  display: flex;
-  flex-direction: column;
-}
-.bg3Three{
-  display: flex;
-  flex-direction: column;
-}
-.gridImagesThree{
-  display: flex;
-  flex-direction: column;
-}
-.gridImagesFour{
-  display: flex;
-  flex-direction: column;
-}
-.bgEmail{
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding: 0px;
- 
-}
 
-svg{
-  font-size: 1.5rem;
-}
+  .gridImages {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bg3Three {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gridImagesThree {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gridImagesFour {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bgEmail {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0px;
+
+  }
+
+  svg {
+    font-size: 1.5rem;
+  }
 
 
 

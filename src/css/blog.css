@@ -1,103 +1,108 @@
-.mainDivBlog{
+.mainDivBlog {
   display: flex;
   justify-content: right;
-  
+
 }
-.fitBlog{
+
+.fitBlog {
   font-size: 1rem;
   text-align: center;
 }
 
-.titleBlog{
+.titleBlog {
   text-align: center;
 }
 
-.right22{
+.right22 {
   width: 30%;
   justify-content: right;
- 
+
 }
 
-.left1{
+.left1 {
   width: 70%;
   display: grid;
   grid-template-columns: 300fr 300fr;
   padding: 20px;
 }
 
-.linebLOG{
+.linebLOG {
   width: 100%;
-  
+
 }
 
-.divButtonBlog{
+.divButtonBlog {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   padding: 10px;
   gap: 20px;
   text-align: right;
   justify-content: right;
- 
+
 }
-.btnBlog{
+
+.btnBlog {
   border: none;
-  padding: 1rem 1.3rem ;
+  padding: 1rem 1.3rem;
   font-size: 0.8rem;
   background-color: rgb(88, 139, 122);
   text-decoration: none;
 
 }
 
-.blogShow{
+.blogShow {
   display: flex;
   flex-direction: column;
   justify-content: right;
- 
+
   text-align: right;
-  
+
 }
 
-.imgBlog1{
+.imgBlog1 {
   max-width: 90%;
   max-height: 90%;
   display: flex;
- 
+
 
 }
 
-.pBlog{
+.pBlog {
   margin: 0;
   font-size: 1rem;
- 
+
 }
 
-.readmore{
-font-weight: bold;
+.readmore {
+  font-weight: bold;
 }
 
-.linkStyle{
+.linkStyle {
   text-decoration: none;
 }
 
-@media (orientation :portrait ){
-  .mainDivBlog{
+@media (orientation :portrait) {
+  .mainDivBlog {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
   }
-  .right22{
+
+  .right22 {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
   }
-  .left1{
+
+  .left1 {
     display: flex;
     flex-wrap: wrap;
     margin: auto;
     gap: 2rem;
     width: 90%;
   }
-  .divButtonBlog{
+
+  .divButtonBlog {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;

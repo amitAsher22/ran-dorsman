@@ -1,9 +1,6 @@
 import React, { useContext } from "react";
 import "../../css/online.css";
 import { UserContext } from "../../App";
-import data from './online.json'
-
-
 
 function Online() {
   const { toggle, setToggle } = useContext(UserContext);
@@ -11,7 +8,7 @@ function Online() {
     <div className={toggle}>
       <div>
         <div className="mainOnline">
-          <h1 className="titleOnline">מנוי חודשי או שנתי</h1>
+          <p className="titleOnline">מנוי חודשי או שנתי</p>
           <p className="pOnline">
             כל מנוי מתחיל מ-3 ימים ללא עלות. בחר את המנוי המתאים לך ביותר:)
           </p>
@@ -58,9 +55,6 @@ function Online() {
             </div>
           </div>
         </div>
-     
-   
-       
       </div>
     </div>
   );

@@ -57,9 +57,8 @@ function App() {
           // notification={false}
           avatar="https://cdn.pixabay.com/photo/2022/06/07/09/33/dance-7247907__340.jpg"
           statusMessage="WhatsApp"
-          accountName="מאמן כושר- אליק"
-          chatMessage="מה שלומך?😃
-           איך אני יכול לעזור לך?  "
+          accountName="All-Out"
+          chatMessage="היי ! "
         />
       </div>
     </UserContext.Provider>

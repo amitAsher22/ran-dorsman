@@ -1,10 +1,7 @@
 import React, { useState, useContext, useEffect } from "react";
 import "../../css/TrainingGroups.css";
 import { UserContext } from "../../App";
-
-import data from "./TrainingGroups.json";
-
-console.log(data);
+import { request } from "graphql-request";
 
 const TrainingGroups = () => {
   const { toggle, setToggle } = useContext(UserContext);
@@ -12,6 +9,7 @@ const TrainingGroups = () => {
   const [show, setShow] = useState(false);
   const [numberId, setNumberId] = useState(0);
   const [oneGroup, setOneGroup] = useState({});
+  const [train, setTrain] = useState(null);
   const [group, setGroup] = useState([
     {
       imageGroup:
@@ -35,6 +33,31 @@ const TrainingGroups = () => {
       id: 2,
     },
   ]);
+
+  useEffect(() => {
+    const fetchProducts = async () => {
+      const { traininggroups } = await request(
+        "https://api-us-west-2.graphcms.com/v2/cl4fkql1705br01xv4dcjdol1/master",
+        `
+        query MyQuery {
+          traininggroups {
+           titleBig
+           buttonRight
+           buttonLeft
+           buttonMiddle
+         }
+       }
+        
+        
+        
+    `
+      );
+
+      setTrain(traininggroups);
+    };
+
+    fetchProducts();
+  }, []);
 
   useEffect(() => {
     setOneGroup(group[numberId]);
@@ -92,12 +115,18 @@ const TrainingGroups = () => {
         <div className={toggle}>
           <div className="backgroundGroup">
             <div>
-              <p className="titleGroups">אימוני קבוצות</p>
+              <p className="titleGroups">
+                {train?.length ? train[0].titleBig : null}
+              </p>
               <div className="groupBtn">
-                <button className="fileBtn">Download our schedule</button>
-                <button className="fileBtn">הורדת מערכת שבועית PDF</button>
                 <button className="fileBtn">
-                  מערכת PDF מותאמת לנשים בהריון
+                  {train?.length ? train[0].buttonRight : null}
+                </button>
+                <button className="fileBtn">
+                  {train?.length ? train[0].buttonMiddle : null}
+                </button>
+                <button className="fileBtn">
+                  {train?.length ? train[0].buttonLeft : null}
                 </button>
               </div>
             </div>

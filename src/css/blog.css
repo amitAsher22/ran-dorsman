@@ -11,6 +11,7 @@
 
 .titleBlog {
   text-align: center;
+
 }
 
 .right22 {
@@ -29,6 +30,7 @@
 .linebLOG {
   width: 100%;
 
+
 }
 
 .divButtonBlog {
@@ -38,6 +40,8 @@
   gap: 20px;
   text-align: right;
   justify-content: right;
+  color: white;
+
 
 }
 
@@ -45,8 +49,9 @@
   border: none;
   padding: 1rem 1.3rem;
   font-size: 0.8rem;
-  background-color: rgb(88, 139, 122);
+  background-color: rgb(31, 65, 65);
   text-decoration: none;
+  color: white;
 
 }
 
@@ -71,14 +76,20 @@
   margin: 0;
   font-size: 1rem;
 
+
 }
 
 .readmore {
   font-weight: bold;
 }
 
-.linkStyle {
+.linkStyle1 {
   text-decoration: none;
+  color: white;
+}
+
+.linkStyle1:hover {
+  color: white;
 }
 
 @media (orientation :portrait) {

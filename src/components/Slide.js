@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import data from "./slide.json";
 
 function Slide() {
   const [show, setShow] = useState(false);
@@ -36,7 +35,6 @@ function Slide() {
 
   const specificCoache = (num) => {
     setNumber(num);
-    console.log(num);
     const oneCoach = coaches.find((element) => element.id === num);
     setoneCoach(oneCoach);
     setShow(true);

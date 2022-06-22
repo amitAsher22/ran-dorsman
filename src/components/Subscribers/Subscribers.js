@@ -50,8 +50,6 @@ const Subscribers = () => {
     fetchProducts();
   }, []);
 
-  console.log(products);
-
   return (
     <div className={toggle}>
       <div className="testpos">

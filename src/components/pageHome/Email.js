@@ -106,8 +106,8 @@ function Email() {
             <AiOutlineInstagram />
             <FaFacebookF />
           </div>
-          <p>כתובתנו: אבן עזרא 17, הרצליה.</p>
-          <p>ניתן ליצור קשר גם בדרכים הבאות:</p>
+
+          <p className="titleTwoAdress">ניתן ליצור קשר גם בדרכים הבאות:</p>
           <p>
             <a
               className="emailRan"

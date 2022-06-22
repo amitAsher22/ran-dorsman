@@ -49,13 +49,13 @@
 }
 
 .CTrain {
-  color: rgb(58, 194, 62);
+  color: rgb(2, 69, 69);
 }
 
 .iconP {
   font-size: 1rem;
   margin-left: 0.5rem;
-  color: rgb(58, 194, 62);
+  color: rgb(31, 65, 65);
 }
 
 .listP {
@@ -109,7 +109,7 @@
 }
 
 .colorUl {
-  color: rgb(58, 194, 62);
+  color: rgb(31, 65, 65);
   ;
 }
 
@@ -117,7 +117,7 @@
   width: 100%;
   border: none;
   padding: 0.5rem;
-  background-color: rgb(58, 194, 62);
+  background-color: rgb(31, 65, 65);
   color: white;
 }
 
@@ -141,7 +141,7 @@
 }
 
 .clock1 {
-  color: rgb(58, 194, 62);
+  color: rgb(31, 65, 65);
 }
 
 @media (orientation :portrait) {

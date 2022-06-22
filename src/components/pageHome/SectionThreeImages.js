@@ -12,7 +12,7 @@ function SectionThreeImages() {
           width={250}
           height={150}
           src={img4}
-          alt="img1"
+          alt="img111"
         />
         <div className="bg3Three3">
           <div className="bg3Div">

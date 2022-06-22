@@ -1,12 +1,12 @@
 import React from "react";
 import "../../css/SectionTwoImages.css";
+import img22 from "../../images/img22.jpg";
 import img1 from "../../images/img1.jpg";
-import img2 from "../../images/img2.jpg";
 
 function SectionTwoImages() {
   return (
     <div className="gridImages">
-      <img className="bg1" width={250} height={250} src={img1} alt="img1" />
+      <img className="bg1" width={170} height={250} src={img1} alt="img1" />
       <div className="bgTwo">
         <div className="bg3">
           <div>
@@ -27,7 +27,7 @@ function SectionTwoImages() {
           </div>
         </div>
       </div>
-      <img className="bg2" width={250} height={250} src={img2} alt="img2" />
+      <img className="bg2" width={170} height={250} src={img22} alt="img2" />
     </div>
   );
 }
